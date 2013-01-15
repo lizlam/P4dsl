@@ -3,7 +3,14 @@
 */
 package org.xtext.example.p4dsl.ui.outline;
 
+import org.eclipse.swt.graphics.Image;
+import org.eclipse.xtext.ui.IImageHelper;
 import org.eclipse.xtext.ui.editor.outline.impl.DefaultOutlineTreeProvider;
+import org.xtext.example.p4dsl.p4Dsl.Add;
+import org.xtext.example.p4dsl.p4Dsl.Delete;
+import org.xtext.example.p4dsl.p4Dsl.Edit;
+
+import com.google.inject.Inject;
 
 /**
  * customization of the default outline structure
@@ -11,4 +18,18 @@ import org.eclipse.xtext.ui.editor.outline.impl.DefaultOutlineTreeProvider;
  */
 public class P4DslOutlineTreeProvider extends DefaultOutlineTreeProvider {
 	
+	@Inject
+	private IImageHelper imageHelper;
+	
+	protected Image _image(Add a) {
+		return imageHelper.getImage("add.png");
+	}
+	
+	protected Image _image(Edit e) {
+		return imageHelper.getImage("edit.png");
+	}
+	
+	protected Image _image(Delete d) {
+		return imageHelper.getImage("delete.png");
+	}
 }
