@@ -3,10 +3,37 @@
 */
 package org.xtext.example.p4dsl.ui.contentassist;
 
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.RuleCall;
+import org.eclipse.xtext.ui.IImageHelper;
+import org.eclipse.xtext.ui.editor.contentassist.ContentAssistContext;
+import org.eclipse.xtext.ui.editor.contentassist.ICompletionProposalAcceptor;
 import org.xtext.example.p4dsl.ui.contentassist.AbstractP4DslProposalProvider;
+
+import com.google.inject.Inject;
 /**
  * see http://www.eclipse.org/Xtext/documentation/latest/xtext.html#contentAssist on how to customize content assistant
  */
 public class P4DslProposalProvider extends AbstractP4DslProposalProvider {
-
+	
+	@Inject
+	private IImageHelper imageHelper;
+	
+    @Override
+    public void complete_Add(EObject model, RuleCall ruleCall,
+    		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+    	acceptor.accept(createCompletionProposal("add", "add", imageHelper.getImage("add.png"), context));
+    }
+    
+    @Override
+    public void complete_Edit(EObject model, RuleCall ruleCall,
+    		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+    	acceptor.accept(createCompletionProposal("edit", "edit", imageHelper.getImage("edit.png"), context));
+    }
+    
+    @Override
+    public void complete_Delete(EObject model, RuleCall ruleCall,
+    		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+    	acceptor.accept(createCompletionProposal("delete", "delete", imageHelper.getImage("delete.png"), context));
+    }
 }

@@ -5,6 +5,8 @@ package org.xtext.example.p4dsl.ui.labeling;
 
 import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider;
 import org.eclipse.xtext.ui.label.DefaultEObjectLabelProvider; 
+import org.xtext.example.p4dsl.p4Dsl.Add;
+import org.xtext.example.p4dsl.p4Dsl.Edit;
  
 import com.google.inject.Inject;
 
@@ -23,12 +25,13 @@ public class P4DslLabelProvider extends DefaultEObjectLabelProvider {
 /*
 	//Labels and icons can be computed like this:
 	
-	String text(MyModel ele) {
-	  return "my "+ele.getName();
+	String text(Add a) {
+	  return "my add";
 	}
 	 
-    String image(MyModel ele) {
-      return "MyModel.gif";
+    String image(Edit edit) {
+      return "edit.png";
     }
 */
+	
 }
