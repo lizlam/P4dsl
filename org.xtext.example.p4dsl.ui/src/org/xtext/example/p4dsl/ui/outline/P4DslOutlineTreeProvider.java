@@ -9,6 +9,7 @@ import org.eclipse.xtext.ui.editor.outline.impl.DefaultOutlineTreeProvider;
 import org.xtext.example.p4dsl.p4Dsl.Add;
 import org.xtext.example.p4dsl.p4Dsl.Delete;
 import org.xtext.example.p4dsl.p4Dsl.Edit;
+import org.xtext.example.p4dsl.p4Dsl.Model;
 
 import com.google.inject.Inject;
 
@@ -20,6 +21,10 @@ public class P4DslOutlineTreeProvider extends DefaultOutlineTreeProvider {
 	
 	@Inject
 	private IImageHelper imageHelper;
+	
+	protected Image _image(Model m) {
+		return imageHelper.getImage("notepad.png");
+	}
 	
 	protected Image _image(Add a) {
 		return imageHelper.getImage("add.png");
