@@ -14,10 +14,13 @@ import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 import org.xtext.example.p4dsl.p4Dsl.Add;
+import org.xtext.example.p4dsl.p4Dsl.CLIENT;
 import org.xtext.example.p4dsl.p4Dsl.Delete;
 import org.xtext.example.p4dsl.p4Dsl.Edit;
 import org.xtext.example.p4dsl.p4Dsl.Model;
 import org.xtext.example.p4dsl.p4Dsl.P4DslPackage;
+import org.xtext.example.p4dsl.p4Dsl.PORT;
+import org.xtext.example.p4dsl.p4Dsl.USER;
 import org.xtext.example.p4dsl.services.P4DslGrammarAccess;
 
 @SuppressWarnings("all")
@@ -34,6 +37,15 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 				   context == grammarAccess.getFileBasedCommandRule() ||
 				   context == grammarAccess.getP4CommandRule()) {
 					sequence_Add(context, (Add) semanticObject); 
+					return; 
+				}
+				else break;
+			case P4DslPackage.CLIENT:
+				if(context == grammarAccess.getCLIENTRule() ||
+				   context == grammarAccess.getCommandRule() ||
+				   context == grammarAccess.getP4CommandRule() ||
+				   context == grammarAccess.getPUCFlagRule()) {
+					sequence_CLIENT(context, (CLIENT) semanticObject); 
 					return; 
 				}
 				else break;
@@ -61,6 +73,24 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 					return; 
 				}
 				else break;
+			case P4DslPackage.PORT:
+				if(context == grammarAccess.getCommandRule() ||
+				   context == grammarAccess.getP4CommandRule() ||
+				   context == grammarAccess.getPORTRule() ||
+				   context == grammarAccess.getPUCFlagRule()) {
+					sequence_PORT(context, (PORT) semanticObject); 
+					return; 
+				}
+				else break;
+			case P4DslPackage.USER:
+				if(context == grammarAccess.getCommandRule() ||
+				   context == grammarAccess.getP4CommandRule() ||
+				   context == grammarAccess.getPUCFlagRule() ||
+				   context == grammarAccess.getUSERRule()) {
+					sequence_USER(context, (USER) semanticObject); 
+					return; 
+				}
+				else break;
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}
@@ -71,8 +101,8 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 */
 	protected void sequence_Add(EObject context, Add semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, P4DslPackage.Literals.FILE_BASED_COMMAND__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, P4DslPackage.Literals.FILE_BASED_COMMAND__NAME));
+			if(transientValues.isValueTransient(semanticObject, P4DslPackage.Literals.P4_COMMAND__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, P4DslPackage.Literals.P4_COMMAND__NAME));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
@@ -83,12 +113,21 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	
 	/**
 	 * Constraint:
+	 *     (name=ID p4command+=P4Command)
+	 */
+	protected void sequence_CLIENT(EObject context, CLIENT semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
 	 *     name=ID
 	 */
 	protected void sequence_Delete(EObject context, Delete semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, P4DslPackage.Literals.FILE_BASED_COMMAND__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, P4DslPackage.Literals.FILE_BASED_COMMAND__NAME));
+			if(transientValues.isValueTransient(semanticObject, P4DslPackage.Literals.P4_COMMAND__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, P4DslPackage.Literals.P4_COMMAND__NAME));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
@@ -103,8 +142,8 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 */
 	protected void sequence_Edit(EObject context, Edit semanticObject) {
 		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, P4DslPackage.Literals.FILE_BASED_COMMAND__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, P4DslPackage.Literals.FILE_BASED_COMMAND__NAME));
+			if(transientValues.isValueTransient(semanticObject, P4DslPackage.Literals.P4_COMMAND__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, P4DslPackage.Literals.P4_COMMAND__NAME));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
@@ -118,6 +157,24 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 *     command+=Command*
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=P4PORT p4command+=P4Command)
+	 */
+	protected void sequence_PORT(EObject context, PORT semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID p4command+=P4Command)
+	 */
+	protected void sequence_USER(EObject context, USER semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 }

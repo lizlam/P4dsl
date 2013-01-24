@@ -94,6 +94,45 @@ public class P4DslSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case P4DslPackage.PUC_FLAG:
+      {
+        PUCFlag pucFlag = (PUCFlag)theEObject;
+        T result = casePUCFlag(pucFlag);
+        if (result == null) result = caseP4Command(pucFlag);
+        if (result == null) result = caseCommand(pucFlag);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case P4DslPackage.PORT:
+      {
+        PORT port = (PORT)theEObject;
+        T result = casePORT(port);
+        if (result == null) result = casePUCFlag(port);
+        if (result == null) result = caseP4Command(port);
+        if (result == null) result = caseCommand(port);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case P4DslPackage.USER:
+      {
+        USER user = (USER)theEObject;
+        T result = caseUSER(user);
+        if (result == null) result = casePUCFlag(user);
+        if (result == null) result = caseP4Command(user);
+        if (result == null) result = caseCommand(user);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case P4DslPackage.CLIENT:
+      {
+        CLIENT client = (CLIENT)theEObject;
+        T result = caseCLIENT(client);
+        if (result == null) result = casePUCFlag(client);
+        if (result == null) result = caseP4Command(client);
+        if (result == null) result = caseCommand(client);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case P4DslPackage.FILE_BASED_COMMAND:
       {
         FileBasedCommand fileBasedCommand = (FileBasedCommand)theEObject;
@@ -181,6 +220,70 @@ public class P4DslSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseP4Command(P4Command object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>PUC Flag</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>PUC Flag</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePUCFlag(PUCFlag object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>PORT</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>PORT</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T casePORT(PORT object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>USER</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>USER</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseUSER(USER object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>CLIENT</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>CLIENT</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseCLIENT(CLIENT object)
   {
     return null;
   }

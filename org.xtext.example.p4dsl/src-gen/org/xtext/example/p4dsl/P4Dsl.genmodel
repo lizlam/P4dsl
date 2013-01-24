@@ -11,10 +11,16 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference P4Dsl.ecore#//Model/command"/>
     </genClasses>
     <genClasses ecoreClass="P4Dsl.ecore#//Command"/>
-    <genClasses ecoreClass="P4Dsl.ecore#//P4Command"/>
-    <genClasses ecoreClass="P4Dsl.ecore#//FileBasedCommand">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute P4Dsl.ecore#//FileBasedCommand/name"/>
+    <genClasses ecoreClass="P4Dsl.ecore#//P4Command">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute P4Dsl.ecore#//P4Command/name"/>
     </genClasses>
+    <genClasses ecoreClass="P4Dsl.ecore#//PUCFlag">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference P4Dsl.ecore#//PUCFlag/p4command"/>
+    </genClasses>
+    <genClasses ecoreClass="P4Dsl.ecore#//PORT"/>
+    <genClasses ecoreClass="P4Dsl.ecore#//USER"/>
+    <genClasses ecoreClass="P4Dsl.ecore#//CLIENT"/>
+    <genClasses ecoreClass="P4Dsl.ecore#//FileBasedCommand"/>
     <genClasses ecoreClass="P4Dsl.ecore#//Add"/>
     <genClasses ecoreClass="P4Dsl.ecore#//Edit"/>
     <genClasses ecoreClass="P4Dsl.ecore#//Delete"/>

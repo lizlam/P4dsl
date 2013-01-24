@@ -114,13 +114,170 @@ public interface P4DslPackage extends EPackage
   int P4_COMMAND = 2;
 
   /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int P4_COMMAND__NAME = COMMAND_FEATURE_COUNT + 0;
+
+  /**
    * The number of structural features of the '<em>P4 Command</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int P4_COMMAND_FEATURE_COUNT = COMMAND_FEATURE_COUNT + 0;
+  int P4_COMMAND_FEATURE_COUNT = COMMAND_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PUCFlagImpl <em>PUC Flag</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.PUCFlagImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPUCFlag()
+   * @generated
+   */
+  int PUC_FLAG = 3;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PUC_FLAG__NAME = P4_COMMAND__NAME;
+
+  /**
+   * The feature id for the '<em><b>P4command</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PUC_FLAG__P4COMMAND = P4_COMMAND_FEATURE_COUNT + 0;
+
+  /**
+   * The number of structural features of the '<em>PUC Flag</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PUC_FLAG_FEATURE_COUNT = P4_COMMAND_FEATURE_COUNT + 1;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl <em>PORT</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPORT()
+   * @generated
+   */
+  int PORT = 4;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PORT__NAME = PUC_FLAG__NAME;
+
+  /**
+   * The feature id for the '<em><b>P4command</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PORT__P4COMMAND = PUC_FLAG__P4COMMAND;
+
+  /**
+   * The number of structural features of the '<em>PORT</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PORT_FEATURE_COUNT = PUC_FLAG_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.USERImpl <em>USER</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.USERImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getUSER()
+   * @generated
+   */
+  int USER = 5;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int USER__NAME = PUC_FLAG__NAME;
+
+  /**
+   * The feature id for the '<em><b>P4command</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int USER__P4COMMAND = PUC_FLAG__P4COMMAND;
+
+  /**
+   * The number of structural features of the '<em>USER</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int USER_FEATURE_COUNT = PUC_FLAG_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl <em>CLIENT</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getCLIENT()
+   * @generated
+   */
+  int CLIENT = 6;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CLIENT__NAME = PUC_FLAG__NAME;
+
+  /**
+   * The feature id for the '<em><b>P4command</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CLIENT__P4COMMAND = PUC_FLAG__P4COMMAND;
+
+  /**
+   * The number of structural features of the '<em>CLIENT</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int CLIENT_FEATURE_COUNT = PUC_FLAG_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.FileBasedCommandImpl <em>File Based Command</em>}' class.
@@ -130,7 +287,7 @@ public interface P4DslPackage extends EPackage
    * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getFileBasedCommand()
    * @generated
    */
-  int FILE_BASED_COMMAND = 3;
+  int FILE_BASED_COMMAND = 7;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -139,7 +296,7 @@ public interface P4DslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILE_BASED_COMMAND__NAME = P4_COMMAND_FEATURE_COUNT + 0;
+  int FILE_BASED_COMMAND__NAME = P4_COMMAND__NAME;
 
   /**
    * The number of structural features of the '<em>File Based Command</em>' class.
@@ -148,7 +305,7 @@ public interface P4DslPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILE_BASED_COMMAND_FEATURE_COUNT = P4_COMMAND_FEATURE_COUNT + 1;
+  int FILE_BASED_COMMAND_FEATURE_COUNT = P4_COMMAND_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.AddImpl <em>Add</em>}' class.
@@ -158,7 +315,7 @@ public interface P4DslPackage extends EPackage
    * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getAdd()
    * @generated
    */
-  int ADD = 4;
+  int ADD = 8;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -186,7 +343,7 @@ public interface P4DslPackage extends EPackage
    * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getEdit()
    * @generated
    */
-  int EDIT = 5;
+  int EDIT = 9;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -214,7 +371,7 @@ public interface P4DslPackage extends EPackage
    * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getDelete()
    * @generated
    */
-  int DELETE = 6;
+  int DELETE = 10;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -277,6 +434,68 @@ public interface P4DslPackage extends EPackage
   EClass getP4Command();
 
   /**
+   * Returns the meta object for the attribute '{@link org.xtext.example.p4dsl.p4Dsl.P4Command#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.P4Command#getName()
+   * @see #getP4Command()
+   * @generated
+   */
+  EAttribute getP4Command_Name();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.PUCFlag <em>PUC Flag</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>PUC Flag</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.PUCFlag
+   * @generated
+   */
+  EClass getPUCFlag();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link org.xtext.example.p4dsl.p4Dsl.PUCFlag#getP4command <em>P4command</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>P4command</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.PUCFlag#getP4command()
+   * @see #getPUCFlag()
+   * @generated
+   */
+  EReference getPUCFlag_P4command();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.PORT <em>PORT</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>PORT</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.PORT
+   * @generated
+   */
+  EClass getPORT();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.USER <em>USER</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>USER</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.USER
+   * @generated
+   */
+  EClass getUSER();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.CLIENT <em>CLIENT</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>CLIENT</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.CLIENT
+   * @generated
+   */
+  EClass getCLIENT();
+
+  /**
    * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.FileBasedCommand <em>File Based Command</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -285,17 +504,6 @@ public interface P4DslPackage extends EPackage
    * @generated
    */
   EClass getFileBasedCommand();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.p4dsl.p4Dsl.FileBasedCommand#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see org.xtext.example.p4dsl.p4Dsl.FileBasedCommand#getName()
-   * @see #getFileBasedCommand()
-   * @generated
-   */
-  EAttribute getFileBasedCommand_Name();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.Add <em>Add</em>}'.
@@ -389,6 +597,62 @@ public interface P4DslPackage extends EPackage
     EClass P4_COMMAND = eINSTANCE.getP4Command();
 
     /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute P4_COMMAND__NAME = eINSTANCE.getP4Command_Name();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PUCFlagImpl <em>PUC Flag</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.PUCFlagImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPUCFlag()
+     * @generated
+     */
+    EClass PUC_FLAG = eINSTANCE.getPUCFlag();
+
+    /**
+     * The meta object literal for the '<em><b>P4command</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PUC_FLAG__P4COMMAND = eINSTANCE.getPUCFlag_P4command();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl <em>PORT</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPORT()
+     * @generated
+     */
+    EClass PORT = eINSTANCE.getPORT();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.USERImpl <em>USER</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.USERImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getUSER()
+     * @generated
+     */
+    EClass USER = eINSTANCE.getUSER();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl <em>CLIENT</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getCLIENT()
+     * @generated
+     */
+    EClass CLIENT = eINSTANCE.getCLIENT();
+
+    /**
      * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.FileBasedCommandImpl <em>File Based Command</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -397,14 +661,6 @@ public interface P4DslPackage extends EPackage
      * @generated
      */
     EClass FILE_BASED_COMMAND = eINSTANCE.getFileBasedCommand();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute FILE_BASED_COMMAND__NAME = eINSTANCE.getFileBasedCommand_Name();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.AddImpl <em>Add</em>}' class.

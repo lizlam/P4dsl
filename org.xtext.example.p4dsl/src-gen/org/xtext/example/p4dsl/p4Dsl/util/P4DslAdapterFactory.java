@@ -90,6 +90,26 @@ public class P4DslAdapterFactory extends AdapterFactoryImpl
         return createP4CommandAdapter();
       }
       @Override
+      public Adapter casePUCFlag(PUCFlag object)
+      {
+        return createPUCFlagAdapter();
+      }
+      @Override
+      public Adapter casePORT(PORT object)
+      {
+        return createPORTAdapter();
+      }
+      @Override
+      public Adapter caseUSER(USER object)
+      {
+        return createUSERAdapter();
+      }
+      @Override
+      public Adapter caseCLIENT(CLIENT object)
+      {
+        return createCLIENTAdapter();
+      }
+      @Override
       public Adapter caseFileBasedCommand(FileBasedCommand object)
       {
         return createFileBasedCommandAdapter();
@@ -172,6 +192,66 @@ public class P4DslAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createP4CommandAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.example.p4dsl.p4Dsl.PUCFlag <em>PUC Flag</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.example.p4dsl.p4Dsl.PUCFlag
+   * @generated
+   */
+  public Adapter createPUCFlagAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.example.p4dsl.p4Dsl.PORT <em>PORT</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.example.p4dsl.p4Dsl.PORT
+   * @generated
+   */
+  public Adapter createPORTAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.example.p4dsl.p4Dsl.USER <em>USER</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.example.p4dsl.p4Dsl.USER
+   * @generated
+   */
+  public Adapter createUSERAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.xtext.example.p4dsl.p4Dsl.CLIENT <em>CLIENT</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.xtext.example.p4dsl.p4Dsl.CLIENT
+   * @generated
+   */
+  public Adapter createCLIENTAdapter()
   {
     return null;
   }

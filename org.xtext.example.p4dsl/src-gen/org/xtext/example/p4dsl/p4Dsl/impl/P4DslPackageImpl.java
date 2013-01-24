@@ -18,6 +18,7 @@ import org.xtext.example.p4dsl.p4Dsl.Model;
 import org.xtext.example.p4dsl.p4Dsl.P4Command;
 import org.xtext.example.p4dsl.p4Dsl.P4DslFactory;
 import org.xtext.example.p4dsl.p4Dsl.P4DslPackage;
+import org.xtext.example.p4dsl.p4Dsl.PUCFlag;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,6 +48,34 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
    * @generated
    */
   private EClass p4CommandEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass pucFlagEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass portEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass userEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass clientEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -184,9 +213,9 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getFileBasedCommand()
+  public EAttribute getP4Command_Name()
   {
-    return fileBasedCommandEClass;
+    return (EAttribute)p4CommandEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -194,9 +223,59 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getFileBasedCommand_Name()
+  public EClass getPUCFlag()
   {
-    return (EAttribute)fileBasedCommandEClass.getEStructuralFeatures().get(0);
+    return pucFlagEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getPUCFlag_P4command()
+  {
+    return (EReference)pucFlagEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getPORT()
+  {
+    return portEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getUSER()
+  {
+    return userEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getCLIENT()
+  {
+    return clientEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getFileBasedCommand()
+  {
+    return fileBasedCommandEClass;
   }
 
   /**
@@ -265,9 +344,18 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
     commandEClass = createEClass(COMMAND);
 
     p4CommandEClass = createEClass(P4_COMMAND);
+    createEAttribute(p4CommandEClass, P4_COMMAND__NAME);
+
+    pucFlagEClass = createEClass(PUC_FLAG);
+    createEReference(pucFlagEClass, PUC_FLAG__P4COMMAND);
+
+    portEClass = createEClass(PORT);
+
+    userEClass = createEClass(USER);
+
+    clientEClass = createEClass(CLIENT);
 
     fileBasedCommandEClass = createEClass(FILE_BASED_COMMAND);
-    createEAttribute(fileBasedCommandEClass, FILE_BASED_COMMAND__NAME);
 
     addEClass = createEClass(ADD);
 
@@ -306,6 +394,10 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
 
     // Add supertypes to classes
     p4CommandEClass.getESuperTypes().add(this.getCommand());
+    pucFlagEClass.getESuperTypes().add(this.getP4Command());
+    portEClass.getESuperTypes().add(this.getPUCFlag());
+    userEClass.getESuperTypes().add(this.getPUCFlag());
+    clientEClass.getESuperTypes().add(this.getPUCFlag());
     fileBasedCommandEClass.getESuperTypes().add(this.getP4Command());
     addEClass.getESuperTypes().add(this.getFileBasedCommand());
     editEClass.getESuperTypes().add(this.getFileBasedCommand());
@@ -318,9 +410,18 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
     initEClass(commandEClass, Command.class, "Command", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(p4CommandEClass, P4Command.class, "P4Command", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getP4Command_Name(), ecorePackage.getEString(), "name", null, 0, 1, P4Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(pucFlagEClass, PUCFlag.class, "PUCFlag", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getPUCFlag_P4command(), this.getP4Command(), null, "p4command", null, 0, -1, PUCFlag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(portEClass, org.xtext.example.p4dsl.p4Dsl.PORT.class, "PORT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(userEClass, org.xtext.example.p4dsl.p4Dsl.USER.class, "USER", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(clientEClass, org.xtext.example.p4dsl.p4Dsl.CLIENT.class, "CLIENT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(fileBasedCommandEClass, FileBasedCommand.class, "FileBasedCommand", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getFileBasedCommand_Name(), ecorePackage.getEString(), "name", null, 0, 1, FileBasedCommand.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(addEClass, Add.class, "Add", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

@@ -150,16 +150,259 @@ ruleP4Command returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-
+(
     { 
-        newCompositeNode(grammarAccess.getP4CommandAccess().getFileBasedCommandParserRuleCall()); 
+        newCompositeNode(grammarAccess.getP4CommandAccess().getPUCFlagParserRuleCall_0()); 
     }
-    this_FileBasedCommand_0=ruleFileBasedCommand
+    this_PUCFlag_0=rulePUCFlag
     { 
-        $current = $this_FileBasedCommand_0.current; 
+        $current = $this_PUCFlag_0.current; 
         afterParserOrEnumRuleCall();
     }
 
+    |
+    { 
+        newCompositeNode(grammarAccess.getP4CommandAccess().getFileBasedCommandParserRuleCall_1()); 
+    }
+    this_FileBasedCommand_1=ruleFileBasedCommand
+    { 
+        $current = $this_FileBasedCommand_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRulePUCFlag
+entryRulePUCFlag returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getPUCFlagRule()); }
+	 iv_rulePUCFlag=rulePUCFlag 
+	 { $current=$iv_rulePUCFlag.current; } 
+	 EOF 
+;
+
+// Rule PUCFlag
+rulePUCFlag returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(
+    { 
+        newCompositeNode(grammarAccess.getPUCFlagAccess().getPORTParserRuleCall_0()); 
+    }
+    this_PORT_0=rulePORT
+    { 
+        $current = $this_PORT_0.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getPUCFlagAccess().getUSERParserRuleCall_1()); 
+    }
+    this_USER_1=ruleUSER
+    { 
+        $current = $this_USER_1.current; 
+        afterParserOrEnumRuleCall();
+    }
+
+    |
+    { 
+        newCompositeNode(grammarAccess.getPUCFlagAccess().getCLIENTParserRuleCall_2()); 
+    }
+    this_CLIENT_2=ruleCLIENT
+    { 
+        $current = $this_CLIENT_2.current; 
+        afterParserOrEnumRuleCall();
+    }
+)
+;
+
+
+
+
+
+// Entry rule entryRulePORT
+entryRulePORT returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getPORTRule()); }
+	 iv_rulePORT=rulePORT 
+	 { $current=$iv_rulePORT.current; } 
+	 EOF 
+;
+
+// Rule PORT
+rulePORT returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='-p' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getPORTAccess().getPKeyword_0());
+    }
+(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getPORTAccess().getNameP4PORTParserRuleCall_1_0()); 
+	    }
+		lv_name_1_0=ruleP4PORT		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getPORTRule());
+	        }
+       		set(
+       			$current, 
+       			"name",
+        		lv_name_1_0, 
+        		"P4PORT");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+)(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getPORTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+	    }
+		lv_p4command_2_0=ruleP4Command		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getPORTRule());
+	        }
+       		add(
+       			$current, 
+       			"p4command",
+        		lv_p4command_2_0, 
+        		"P4Command");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))
+;
+
+
+
+
+
+// Entry rule entryRuleUSER
+entryRuleUSER returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getUSERRule()); }
+	 iv_ruleUSER=ruleUSER 
+	 { $current=$iv_ruleUSER.current; } 
+	 EOF 
+;
+
+// Rule USER
+ruleUSER returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='u' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getUSERAccess().getUKeyword_0());
+    }
+(
+(
+		lv_name_1_0=RULE_ID
+		{
+			newLeafNode(lv_name_1_0, grammarAccess.getUSERAccess().getNameIDTerminalRuleCall_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getUSERRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"name",
+        		lv_name_1_0, 
+        		"ID");
+	    }
+
+)
+)(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getUSERAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+	    }
+		lv_p4command_2_0=ruleP4Command		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getUSERRule());
+	        }
+       		add(
+       			$current, 
+       			"p4command",
+        		lv_p4command_2_0, 
+        		"P4Command");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))
+;
+
+
+
+
+
+// Entry rule entryRuleCLIENT
+entryRuleCLIENT returns [EObject current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getCLIENTRule()); }
+	 iv_ruleCLIENT=ruleCLIENT 
+	 { $current=$iv_ruleCLIENT.current; } 
+	 EOF 
+;
+
+// Rule CLIENT
+ruleCLIENT returns [EObject current=null] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(	otherlv_0='c' 
+    {
+    	newLeafNode(otherlv_0, grammarAccess.getCLIENTAccess().getCKeyword_0());
+    }
+(
+(
+		lv_name_1_0=RULE_ID
+		{
+			newLeafNode(lv_name_1_0, grammarAccess.getCLIENTAccess().getNameIDTerminalRuleCall_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getCLIENTRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"name",
+        		lv_name_1_0, 
+        		"ID");
+	    }
+
+)
+)(
+(
+		{ 
+	        newCompositeNode(grammarAccess.getCLIENTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+	    }
+		lv_p4command_2_0=ruleP4Command		{
+	        if ($current==null) {
+	            $current = createModelElementForParent(grammarAccess.getCLIENTRule());
+	        }
+       		add(
+       			$current, 
+       			"p4command",
+        		lv_p4command_2_0, 
+        		"P4Command");
+	        afterParserOrEnumRuleCall();
+	    }
+
+)
+))
 ;
 
 
@@ -340,6 +583,47 @@ ruleDelete returns [EObject current=null]
 )
 ))
 ;
+
+
+
+
+
+// Entry rule entryRuleP4PORT
+entryRuleP4PORT returns [String current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getP4PORTRule()); } 
+	 iv_ruleP4PORT=ruleP4PORT 
+	 { $current=$iv_ruleP4PORT.current.getText(); }  
+	 EOF 
+;
+
+// Rule P4PORT
+ruleP4PORT returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(    this_ID_0=RULE_ID    {
+		$current.merge(this_ID_0);
+    }
+
+    { 
+    newLeafNode(this_ID_0, grammarAccess.getP4PORTAccess().getIDTerminalRuleCall_0()); 
+    }
+
+	kw=':' 
+    {
+        $current.merge(kw);
+        newLeafNode(kw, grammarAccess.getP4PORTAccess().getColonKeyword_1()); 
+    }
+    this_INT_2=RULE_INT    {
+		$current.merge(this_INT_2);
+    }
+
+    { 
+    newLeafNode(this_INT_2, grammarAccess.getP4PORTAccess().getINTTerminalRuleCall_2()); 
+    }
+)
+    ;
 
 
 

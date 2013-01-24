@@ -67,6 +67,10 @@ public class P4DslFactoryImpl extends EFactoryImpl implements P4DslFactory
       case P4DslPackage.MODEL: return createModel();
       case P4DslPackage.COMMAND: return createCommand();
       case P4DslPackage.P4_COMMAND: return createP4Command();
+      case P4DslPackage.PUC_FLAG: return createPUCFlag();
+      case P4DslPackage.PORT: return createPORT();
+      case P4DslPackage.USER: return createUSER();
+      case P4DslPackage.CLIENT: return createCLIENT();
       case P4DslPackage.FILE_BASED_COMMAND: return createFileBasedCommand();
       case P4DslPackage.ADD: return createAdd();
       case P4DslPackage.EDIT: return createEdit();
@@ -107,6 +111,50 @@ public class P4DslFactoryImpl extends EFactoryImpl implements P4DslFactory
   {
     P4CommandImpl p4Command = new P4CommandImpl();
     return p4Command;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PUCFlag createPUCFlag()
+  {
+    PUCFlagImpl pucFlag = new PUCFlagImpl();
+    return pucFlag;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public PORT createPORT()
+  {
+    PORTImpl port = new PORTImpl();
+    return port;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public USER createUSER()
+  {
+    USERImpl user = new USERImpl();
+    return user;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public CLIENT createCLIENT()
+  {
+    CLIENTImpl client = new CLIENTImpl();
+    return client;
   }
 
   /**
