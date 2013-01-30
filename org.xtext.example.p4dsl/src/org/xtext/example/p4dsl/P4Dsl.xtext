@@ -38,17 +38,21 @@ FileBasedCommand:
 	Add | Edit | Delete;
 
 Add:
-	'add' name = ID
+	'add' name = FILE
 ;
 
 Edit:
-	'edit' name = ID
+	'edit' name = FILE
 ;
 
 Delete:
-	'delete' name = ID
+	'delete' name = FILE
 ;
 	
 P4PORT:
 	ID ':' INT
+;
+
+FILE:
+	ID | ID '.' ID
 ;

@@ -21,8 +21,9 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalP4DslParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'p4'", "'-p'", "'u'", "'c'", "'add'", "'edit'", "'delete'", "':'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_INT", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'p4'", "'-p'", "'-u'", "'-c'", "'add'", "'edit'", "'delete'", "':'", "'.'"
     };
+    public static final int T__19=19;
     public static final int RULE_ID=4;
     public static final int RULE_STRING=6;
     public static final int T__16=16;
@@ -742,7 +743,7 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleUSER"
-    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:300:1: ruleUSER returns [EObject current=null] : (otherlv_0= 'u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) ;
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:300:1: ruleUSER returns [EObject current=null] : (otherlv_0= '-u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) ;
     public final EObject ruleUSER() throws RecognitionException {
         EObject current = null;
 
@@ -754,11 +755,11 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:303:28: ( (otherlv_0= 'u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:304:1: (otherlv_0= 'u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:303:28: ( (otherlv_0= '-u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:304:1: (otherlv_0= '-u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:304:1: (otherlv_0= 'u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:304:3: otherlv_0= 'u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:304:1: (otherlv_0= '-u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:304:3: otherlv_0= '-u' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) )
             {
             otherlv_0=(Token)match(input,13,FOLLOW_13_in_ruleUSER707); 
 
@@ -878,7 +879,7 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCLIENT"
-    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:361:1: ruleCLIENT returns [EObject current=null] : (otherlv_0= 'c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) ;
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:361:1: ruleCLIENT returns [EObject current=null] : (otherlv_0= '-c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) ;
     public final EObject ruleCLIENT() throws RecognitionException {
         EObject current = null;
 
@@ -890,11 +891,11 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:364:28: ( (otherlv_0= 'c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:365:1: (otherlv_0= 'c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:364:28: ( (otherlv_0= '-c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:365:1: (otherlv_0= '-c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:365:1: (otherlv_0= 'c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:365:3: otherlv_0= 'c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:365:1: (otherlv_0= '-c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:365:3: otherlv_0= '-c' ( (lv_name_1_0= RULE_ID ) ) ( (lv_p4command_2_0= ruleP4Command ) )
             {
             otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleCLIENT833); 
 
@@ -1168,45 +1169,51 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAdd"
-    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:472:1: ruleAdd returns [EObject current=null] : (otherlv_0= 'add' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:472:1: ruleAdd returns [EObject current=null] : (otherlv_0= 'add' ( (lv_name_1_0= ruleFILE ) ) ) ;
     public final EObject ruleAdd() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token lv_name_1_0=null;
+        AntlrDatatypeRuleToken lv_name_1_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:475:28: ( (otherlv_0= 'add' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:476:1: (otherlv_0= 'add' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:475:28: ( (otherlv_0= 'add' ( (lv_name_1_0= ruleFILE ) ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:476:1: (otherlv_0= 'add' ( (lv_name_1_0= ruleFILE ) ) )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:476:1: (otherlv_0= 'add' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:476:3: otherlv_0= 'add' ( (lv_name_1_0= RULE_ID ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:476:1: (otherlv_0= 'add' ( (lv_name_1_0= ruleFILE ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:476:3: otherlv_0= 'add' ( (lv_name_1_0= ruleFILE ) )
             {
             otherlv_0=(Token)match(input,15,FOLLOW_15_in_ruleAdd1105); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getAddAccess().getAddKeyword_0());
                 
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:480:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:481:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:480:1: ( (lv_name_1_0= ruleFILE ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:481:1: (lv_name_1_0= ruleFILE )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:481:1: (lv_name_1_0= RULE_ID )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:482:3: lv_name_1_0= RULE_ID
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:481:1: (lv_name_1_0= ruleFILE )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:482:3: lv_name_1_0= ruleFILE
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAdd1122); 
+             
+            	        newCompositeNode(grammarAccess.getAddAccess().getNameFILEParserRuleCall_1_0()); 
+            	    
+            pushFollow(FOLLOW_ruleFILE_in_ruleAdd1126);
+            lv_name_1_0=ruleFILE();
 
-            			newLeafNode(lv_name_1_0, grammarAccess.getAddAccess().getNameIDTerminalRuleCall_1_0()); 
-            		
+            state._fsp--;
+
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getAddRule());
+            	            current = createModelElementForParent(grammarAccess.getAddRule());
             	        }
-                   		setWithLastConsumed(
+                   		set(
                    			current, 
                    			"name",
                     		lv_name_1_0, 
-                    		"ID");
+                    		"FILE");
+            	        afterParserOrEnumRuleCall();
             	    
 
             }
@@ -1247,13 +1254,13 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:508:2: iv_ruleEdit= ruleEdit EOF
             {
              newCompositeNode(grammarAccess.getEditRule()); 
-            pushFollow(FOLLOW_ruleEdit_in_entryRuleEdit1163);
+            pushFollow(FOLLOW_ruleEdit_in_entryRuleEdit1162);
             iv_ruleEdit=ruleEdit();
 
             state._fsp--;
 
              current =iv_ruleEdit; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEdit1173); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEdit1172); 
 
             }
 
@@ -1271,45 +1278,51 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEdit"
-    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:515:1: ruleEdit returns [EObject current=null] : (otherlv_0= 'edit' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:515:1: ruleEdit returns [EObject current=null] : (otherlv_0= 'edit' ( (lv_name_1_0= ruleFILE ) ) ) ;
     public final EObject ruleEdit() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token lv_name_1_0=null;
+        AntlrDatatypeRuleToken lv_name_1_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:518:28: ( (otherlv_0= 'edit' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:519:1: (otherlv_0= 'edit' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:518:28: ( (otherlv_0= 'edit' ( (lv_name_1_0= ruleFILE ) ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:519:1: (otherlv_0= 'edit' ( (lv_name_1_0= ruleFILE ) ) )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:519:1: (otherlv_0= 'edit' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:519:3: otherlv_0= 'edit' ( (lv_name_1_0= RULE_ID ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:519:1: (otherlv_0= 'edit' ( (lv_name_1_0= ruleFILE ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:519:3: otherlv_0= 'edit' ( (lv_name_1_0= ruleFILE ) )
             {
-            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleEdit1210); 
+            otherlv_0=(Token)match(input,16,FOLLOW_16_in_ruleEdit1209); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEditAccess().getEditKeyword_0());
                 
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:523:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:524:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:523:1: ( (lv_name_1_0= ruleFILE ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:524:1: (lv_name_1_0= ruleFILE )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:524:1: (lv_name_1_0= RULE_ID )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:525:3: lv_name_1_0= RULE_ID
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:524:1: (lv_name_1_0= ruleFILE )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:525:3: lv_name_1_0= ruleFILE
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEdit1227); 
+             
+            	        newCompositeNode(grammarAccess.getEditAccess().getNameFILEParserRuleCall_1_0()); 
+            	    
+            pushFollow(FOLLOW_ruleFILE_in_ruleEdit1230);
+            lv_name_1_0=ruleFILE();
 
-            			newLeafNode(lv_name_1_0, grammarAccess.getEditAccess().getNameIDTerminalRuleCall_1_0()); 
-            		
+            state._fsp--;
+
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getEditRule());
+            	            current = createModelElementForParent(grammarAccess.getEditRule());
             	        }
-                   		setWithLastConsumed(
+                   		set(
                    			current, 
                    			"name",
                     		lv_name_1_0, 
-                    		"ID");
+                    		"FILE");
+            	        afterParserOrEnumRuleCall();
             	    
 
             }
@@ -1350,13 +1363,13 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:551:2: iv_ruleDelete= ruleDelete EOF
             {
              newCompositeNode(grammarAccess.getDeleteRule()); 
-            pushFollow(FOLLOW_ruleDelete_in_entryRuleDelete1268);
+            pushFollow(FOLLOW_ruleDelete_in_entryRuleDelete1266);
             iv_ruleDelete=ruleDelete();
 
             state._fsp--;
 
              current =iv_ruleDelete; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDelete1278); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDelete1276); 
 
             }
 
@@ -1374,45 +1387,51 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDelete"
-    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:558:1: ruleDelete returns [EObject current=null] : (otherlv_0= 'delete' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:558:1: ruleDelete returns [EObject current=null] : (otherlv_0= 'delete' ( (lv_name_1_0= ruleFILE ) ) ) ;
     public final EObject ruleDelete() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token lv_name_1_0=null;
+        AntlrDatatypeRuleToken lv_name_1_0 = null;
+
 
          enterRule(); 
             
         try {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:561:28: ( (otherlv_0= 'delete' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:562:1: (otherlv_0= 'delete' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:561:28: ( (otherlv_0= 'delete' ( (lv_name_1_0= ruleFILE ) ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:562:1: (otherlv_0= 'delete' ( (lv_name_1_0= ruleFILE ) ) )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:562:1: (otherlv_0= 'delete' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:562:3: otherlv_0= 'delete' ( (lv_name_1_0= RULE_ID ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:562:1: (otherlv_0= 'delete' ( (lv_name_1_0= ruleFILE ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:562:3: otherlv_0= 'delete' ( (lv_name_1_0= ruleFILE ) )
             {
-            otherlv_0=(Token)match(input,17,FOLLOW_17_in_ruleDelete1315); 
+            otherlv_0=(Token)match(input,17,FOLLOW_17_in_ruleDelete1313); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getDeleteAccess().getDeleteKeyword_0());
                 
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:566:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:567:1: (lv_name_1_0= RULE_ID )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:566:1: ( (lv_name_1_0= ruleFILE ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:567:1: (lv_name_1_0= ruleFILE )
             {
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:567:1: (lv_name_1_0= RULE_ID )
-            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:568:3: lv_name_1_0= RULE_ID
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:567:1: (lv_name_1_0= ruleFILE )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:568:3: lv_name_1_0= ruleFILE
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDelete1332); 
+             
+            	        newCompositeNode(grammarAccess.getDeleteAccess().getNameFILEParserRuleCall_1_0()); 
+            	    
+            pushFollow(FOLLOW_ruleFILE_in_ruleDelete1334);
+            lv_name_1_0=ruleFILE();
 
-            			newLeafNode(lv_name_1_0, grammarAccess.getDeleteAccess().getNameIDTerminalRuleCall_1_0()); 
-            		
+            state._fsp--;
+
 
             	        if (current==null) {
-            	            current = createModelElement(grammarAccess.getDeleteRule());
+            	            current = createModelElementForParent(grammarAccess.getDeleteRule());
             	        }
-                   		setWithLastConsumed(
+                   		set(
                    			current, 
                    			"name",
                     		lv_name_1_0, 
-                    		"ID");
+                    		"FILE");
+            	        afterParserOrEnumRuleCall();
             	    
 
             }
@@ -1453,13 +1472,13 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:594:2: iv_ruleP4PORT= ruleP4PORT EOF
             {
              newCompositeNode(grammarAccess.getP4PORTRule()); 
-            pushFollow(FOLLOW_ruleP4PORT_in_entryRuleP4PORT1374);
+            pushFollow(FOLLOW_ruleP4PORT_in_entryRuleP4PORT1371);
             iv_ruleP4PORT=ruleP4PORT();
 
             state._fsp--;
 
              current =iv_ruleP4PORT.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleP4PORT1385); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleP4PORT1382); 
 
             }
 
@@ -1494,19 +1513,19 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:605:1: (this_ID_0= RULE_ID kw= ':' this_INT_2= RULE_INT )
             // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:605:6: this_ID_0= RULE_ID kw= ':' this_INT_2= RULE_INT
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleP4PORT1425); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleP4PORT1422); 
 
             		current.merge(this_ID_0);
                 
              
                 newLeafNode(this_ID_0, grammarAccess.getP4PORTAccess().getIDTerminalRuleCall_0()); 
                 
-            kw=(Token)match(input,18,FOLLOW_18_in_ruleP4PORT1443); 
+            kw=(Token)match(input,18,FOLLOW_18_in_ruleP4PORT1440); 
 
                     current.merge(kw);
                     newLeafNode(kw, grammarAccess.getP4PORTAccess().getColonKeyword_1()); 
                 
-            this_INT_2=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleP4PORT1458); 
+            this_INT_2=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleP4PORT1455); 
 
             		current.merge(this_INT_2);
                 
@@ -1531,6 +1550,149 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
         return current;
     }
     // $ANTLR end "ruleP4PORT"
+
+
+    // $ANTLR start "entryRuleFILE"
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:633:1: entryRuleFILE returns [String current=null] : iv_ruleFILE= ruleFILE EOF ;
+    public final String entryRuleFILE() throws RecognitionException {
+        String current = null;
+
+        AntlrDatatypeRuleToken iv_ruleFILE = null;
+
+
+        try {
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:634:2: (iv_ruleFILE= ruleFILE EOF )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:635:2: iv_ruleFILE= ruleFILE EOF
+            {
+             newCompositeNode(grammarAccess.getFILERule()); 
+            pushFollow(FOLLOW_ruleFILE_in_entryRuleFILE1501);
+            iv_ruleFILE=ruleFILE();
+
+            state._fsp--;
+
+             current =iv_ruleFILE.getText(); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleFILE1512); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleFILE"
+
+
+    // $ANTLR start "ruleFILE"
+    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:642:1: ruleFILE returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ID_0= RULE_ID | (this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID ) ) ;
+    public final AntlrDatatypeRuleToken ruleFILE() throws RecognitionException {
+        AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
+
+        Token this_ID_0=null;
+        Token this_ID_1=null;
+        Token kw=null;
+        Token this_ID_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:645:28: ( (this_ID_0= RULE_ID | (this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID ) ) )
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:646:1: (this_ID_0= RULE_ID | (this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID ) )
+            {
+            // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:646:1: (this_ID_0= RULE_ID | (this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID ) )
+            int alt5=2;
+            int LA5_0 = input.LA(1);
+
+            if ( (LA5_0==RULE_ID) ) {
+                int LA5_1 = input.LA(2);
+
+                if ( (LA5_1==EOF||LA5_1==11) ) {
+                    alt5=1;
+                }
+                else if ( (LA5_1==19) ) {
+                    alt5=2;
+                }
+                else {
+                    NoViableAltException nvae =
+                        new NoViableAltException("", 5, 1, input);
+
+                    throw nvae;
+                }
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 5, 0, input);
+
+                throw nvae;
+            }
+            switch (alt5) {
+                case 1 :
+                    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:646:6: this_ID_0= RULE_ID
+                    {
+                    this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleFILE1552); 
+
+                    		current.merge(this_ID_0);
+                        
+                     
+                        newLeafNode(this_ID_0, grammarAccess.getFILEAccess().getIDTerminalRuleCall_0()); 
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:654:6: (this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID )
+                    {
+                    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:654:6: (this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID )
+                    // ../org.xtext.example.p4dsl/src-gen/org/xtext/example/p4dsl/parser/antlr/internal/InternalP4Dsl.g:654:11: this_ID_1= RULE_ID kw= '.' this_ID_3= RULE_ID
+                    {
+                    this_ID_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleFILE1579); 
+
+                    		current.merge(this_ID_1);
+                        
+                     
+                        newLeafNode(this_ID_1, grammarAccess.getFILEAccess().getIDTerminalRuleCall_1_0()); 
+                        
+                    kw=(Token)match(input,19,FOLLOW_19_in_ruleFILE1597); 
+
+                            current.merge(kw);
+                            newLeafNode(kw, grammarAccess.getFILEAccess().getFullStopKeyword_1_1()); 
+                        
+                    this_ID_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleFILE1612); 
+
+                    		current.merge(this_ID_3);
+                        
+                     
+                        newLeafNode(this_ID_3, grammarAccess.getFILEAccess().getIDTerminalRuleCall_1_2()); 
+                        
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleFILE"
 
     // Delegated rules
 
@@ -1576,19 +1738,25 @@ public class InternalP4DslParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleAdd_in_entryRuleAdd1058 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleAdd1068 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_15_in_ruleAdd1105 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAdd1122 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEdit_in_entryRuleEdit1163 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEdit1173 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_ruleEdit1210 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEdit1227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDelete_in_entryRuleDelete1268 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDelete1278 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_ruleDelete1315 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDelete1332 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleP4PORT_in_entryRuleP4PORT1374 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleP4PORT1385 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleP4PORT1425 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleP4PORT1443 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleP4PORT1458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFILE_in_ruleAdd1126 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEdit_in_entryRuleEdit1162 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEdit1172 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_ruleEdit1209 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleFILE_in_ruleEdit1230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDelete_in_entryRuleDelete1266 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDelete1276 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_ruleDelete1313 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleFILE_in_ruleDelete1334 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleP4PORT_in_entryRuleP4PORT1371 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleP4PORT1382 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleP4PORT1422 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleP4PORT1440 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleP4PORT1455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFILE_in_entryRuleFILE1501 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleFILE1512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleFILE1552 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleFILE1579 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_ruleFILE1597 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleFILE1612 = new BitSet(new long[]{0x0000000000000002L});
 
 }

@@ -1,3 +1,4 @@
+T__19=19
 RULE_ID=4
 RULE_STRING=6
 T__16=16
@@ -15,9 +16,10 @@ RULE_SL_COMMENT=8
 RULE_ML_COMMENT=7
 'add'=15
 'p4'=11
+'-u'=13
 ':'=18
-'c'=14
 '-p'=12
-'u'=13
 'edit'=16
+'-c'=14
+'.'=19
 'delete'=17

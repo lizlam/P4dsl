@@ -36,4 +36,22 @@ public class P4DslProposalProvider extends AbstractP4DslProposalProvider {
     		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
     	acceptor.accept(createCompletionProposal("delete", "delete", imageHelper.getImage("delete.png"), context));
     }
+     
+    @Override
+    public void complete_PORT(EObject model, RuleCall ruleCall,
+    		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+    	acceptor.accept(createCompletionProposal("-p", "-p", imageHelper.getImage("database.png"), context));
+    }
+    
+    @Override
+    public void complete_USER(EObject model, RuleCall ruleCall,
+    		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+    	acceptor.accept(createCompletionProposal("-u", "-u", imageHelper.getImage("user-man.png"), context));
+    }
+    
+    @Override
+    public void complete_CLIENT(EObject model, RuleCall ruleCall,
+    		ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
+    	acceptor.accept(createCompletionProposal("-c", "-c", imageHelper.getImage("computer.png"), context));
+    }
 }

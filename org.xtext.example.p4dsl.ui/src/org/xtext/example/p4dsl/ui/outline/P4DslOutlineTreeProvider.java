@@ -7,9 +7,12 @@ import org.eclipse.swt.graphics.Image;
 import org.eclipse.xtext.ui.IImageHelper;
 import org.eclipse.xtext.ui.editor.outline.impl.DefaultOutlineTreeProvider;
 import org.xtext.example.p4dsl.p4Dsl.Add;
+import org.xtext.example.p4dsl.p4Dsl.CLIENT;
 import org.xtext.example.p4dsl.p4Dsl.Delete;
 import org.xtext.example.p4dsl.p4Dsl.Edit;
 import org.xtext.example.p4dsl.p4Dsl.Model;
+import org.xtext.example.p4dsl.p4Dsl.PORT;
+import org.xtext.example.p4dsl.p4Dsl.USER;
 
 import com.google.inject.Inject;
 
@@ -37,4 +40,17 @@ public class P4DslOutlineTreeProvider extends DefaultOutlineTreeProvider {
 	protected Image _image(Delete d) {
 		return imageHelper.getImage("delete.png");
 	}
+	
+	protected Image _image(PORT p) {
+		return imageHelper.getImage("database.png");
+	}
+	
+	protected Image _image(USER u) {
+		return imageHelper.getImage("user-man.png");
+	}
+	
+	protected Image _image(CLIENT c) {
+		return imageHelper.getImage("computer.png");
+	}
+	
 }

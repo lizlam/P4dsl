@@ -141,13 +141,13 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cP4commandP4CommandParserRuleCall_2_0 = (RuleCall)cP4commandAssignment_2.eContents().get(0);
 		
 		//USER:
-		//	"u" name=ID p4command+=P4Command;
+		//	"-u" name=ID p4command+=P4Command;
 		public ParserRule getRule() { return rule; }
 
-		//"u" name=ID p4command+=P4Command
+		//"-u" name=ID p4command+=P4Command
 		public Group getGroup() { return cGroup; }
 
-		//"u"
+		//"-u"
 		public Keyword getUKeyword_0() { return cUKeyword_0; }
 
 		//name=ID
@@ -173,13 +173,13 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cP4commandP4CommandParserRuleCall_2_0 = (RuleCall)cP4commandAssignment_2.eContents().get(0);
 		
 		//CLIENT:
-		//	"c" name=ID p4command+=P4Command;
+		//	"-c" name=ID p4command+=P4Command;
 		public ParserRule getRule() { return rule; }
 
-		//"c" name=ID p4command+=P4Command
+		//"-c" name=ID p4command+=P4Command
 		public Group getGroup() { return cGroup; }
 
-		//"c"
+		//"-c"
 		public Keyword getCKeyword_0() { return cCKeyword_0; }
 
 		//name=ID
@@ -224,23 +224,23 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cAddKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final RuleCall cNameFILEParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		
 		//Add:
-		//	"add" name=ID;
+		//	"add" name=FILE;
 		public ParserRule getRule() { return rule; }
 
-		//"add" name=ID
+		//"add" name=FILE
 		public Group getGroup() { return cGroup; }
 
 		//"add"
 		public Keyword getAddKeyword_0() { return cAddKeyword_0; }
 
-		//name=ID
+		//name=FILE
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		//FILE
+		public RuleCall getNameFILEParserRuleCall_1_0() { return cNameFILEParserRuleCall_1_0; }
 	}
 
 	public class EditElements extends AbstractParserRuleElementFinder {
@@ -248,23 +248,23 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cEditKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final RuleCall cNameFILEParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		
 		//Edit:
-		//	"edit" name=ID;
+		//	"edit" name=FILE;
 		public ParserRule getRule() { return rule; }
 
-		//"edit" name=ID
+		//"edit" name=FILE
 		public Group getGroup() { return cGroup; }
 
 		//"edit"
 		public Keyword getEditKeyword_0() { return cEditKeyword_0; }
 
-		//name=ID
+		//name=FILE
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		//FILE
+		public RuleCall getNameFILEParserRuleCall_1_0() { return cNameFILEParserRuleCall_1_0; }
 	}
 
 	public class DeleteElements extends AbstractParserRuleElementFinder {
@@ -272,23 +272,23 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cDeleteKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final RuleCall cNameFILEParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		
 		//Delete:
-		//	"delete" name=ID;
+		//	"delete" name=FILE;
 		public ParserRule getRule() { return rule; }
 
-		//"delete" name=ID
+		//"delete" name=FILE
 		public Group getGroup() { return cGroup; }
 
 		//"delete"
 		public Keyword getDeleteKeyword_0() { return cDeleteKeyword_0; }
 
-		//name=ID
+		//name=FILE
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		//FILE
+		public RuleCall getNameFILEParserRuleCall_1_0() { return cNameFILEParserRuleCall_1_0; }
 	}
 
 	public class P4PORTElements extends AbstractParserRuleElementFinder {
@@ -314,6 +314,38 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getINTTerminalRuleCall_2() { return cINTTerminalRuleCall_2; }
 	}
+
+	public class FILEElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "FILE");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final Group cGroup_1 = (Group)cAlternatives.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_1_0 = (RuleCall)cGroup_1.eContents().get(0);
+		private final Keyword cFullStopKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_1_2 = (RuleCall)cGroup_1.eContents().get(2);
+		
+		//FILE:
+		//	ID | ID "." ID;
+		public ParserRule getRule() { return rule; }
+
+		//ID | ID "." ID
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//ID "." ID
+		public Group getGroup_1() { return cGroup_1; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1_0() { return cIDTerminalRuleCall_1_0; }
+
+		//"."
+		public Keyword getFullStopKeyword_1_1() { return cFullStopKeyword_1_1; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1_2() { return cIDTerminalRuleCall_1_2; }
+	}
 	
 	
 	private ModelElements pModel;
@@ -328,6 +360,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	private EditElements pEdit;
 	private DeleteElements pDelete;
 	private P4PORTElements pP4PORT;
+	private FILEElements pFILE;
 	
 	private final Grammar grammar;
 
@@ -418,7 +451,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//USER:
-	//	"u" name=ID p4command+=P4Command;
+	//	"-u" name=ID p4command+=P4Command;
 	public USERElements getUSERAccess() {
 		return (pUSER != null) ? pUSER : (pUSER = new USERElements());
 	}
@@ -428,7 +461,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//CLIENT:
-	//	"c" name=ID p4command+=P4Command;
+	//	"-c" name=ID p4command+=P4Command;
 	public CLIENTElements getCLIENTAccess() {
 		return (pCLIENT != null) ? pCLIENT : (pCLIENT = new CLIENTElements());
 	}
@@ -448,7 +481,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Add:
-	//	"add" name=ID;
+	//	"add" name=FILE;
 	public AddElements getAddAccess() {
 		return (pAdd != null) ? pAdd : (pAdd = new AddElements());
 	}
@@ -458,7 +491,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Edit:
-	//	"edit" name=ID;
+	//	"edit" name=FILE;
 	public EditElements getEditAccess() {
 		return (pEdit != null) ? pEdit : (pEdit = new EditElements());
 	}
@@ -468,7 +501,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Delete:
-	//	"delete" name=ID;
+	//	"delete" name=FILE;
 	public DeleteElements getDeleteAccess() {
 		return (pDelete != null) ? pDelete : (pDelete = new DeleteElements());
 	}
@@ -485,6 +518,16 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getP4PORTRule() {
 		return getP4PORTAccess().getRule();
+	}
+
+	//FILE:
+	//	ID | ID "." ID;
+	public FILEElements getFILEAccess() {
+		return (pFILE != null) ? pFILE : (pFILE = new FILEElements());
+	}
+	
+	public ParserRule getFILERule() {
+		return getFILEAccess().getRule();
 	}
 
 	//terminal ID:

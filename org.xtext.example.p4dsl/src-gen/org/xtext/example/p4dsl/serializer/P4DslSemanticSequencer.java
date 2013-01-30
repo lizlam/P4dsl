@@ -97,7 +97,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     name=ID
+	 *     name=FILE
 	 */
 	protected void sequence_Add(EObject context, Add semanticObject) {
 		if(errorAcceptor != null) {
@@ -106,7 +106,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getAddAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getAddAccess().getNameFILEParserRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	
@@ -122,7 +122,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	
 	/**
 	 * Constraint:
-	 *     name=ID
+	 *     name=FILE
 	 */
 	protected void sequence_Delete(EObject context, Delete semanticObject) {
 		if(errorAcceptor != null) {
@@ -131,14 +131,14 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getDeleteAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getDeleteAccess().getNameFILEParserRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     name=ID
+	 *     name=FILE
 	 */
 	protected void sequence_Edit(EObject context, Edit semanticObject) {
 		if(errorAcceptor != null) {
@@ -147,7 +147,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getEditAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getEditAccess().getNameFILEParserRuleCall_1_0(), semanticObject.getName());
 		feeder.finish();
 	}
 	

@@ -301,7 +301,7 @@ ruleUSER returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='u' 
+(	otherlv_0='-u' 
     {
     	newLeafNode(otherlv_0, grammarAccess.getUSERAccess().getUKeyword_0());
     }
@@ -362,7 +362,7 @@ ruleCLIENT returns [EObject current=null]
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
-(	otherlv_0='c' 
+(	otherlv_0='-c' 
     {
     	newLeafNode(otherlv_0, grammarAccess.getCLIENTAccess().getCKeyword_0());
     }
@@ -479,19 +479,19 @@ ruleAdd returns [EObject current=null]
     }
 (
 (
-		lv_name_1_0=RULE_ID
-		{
-			newLeafNode(lv_name_1_0, grammarAccess.getAddAccess().getNameIDTerminalRuleCall_1_0()); 
-		}
-		{
+		{ 
+	        newCompositeNode(grammarAccess.getAddAccess().getNameFILEParserRuleCall_1_0()); 
+	    }
+		lv_name_1_0=ruleFILE		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getAddRule());
+	            $current = createModelElementForParent(grammarAccess.getAddRule());
 	        }
-       		setWithLastConsumed(
+       		set(
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"FILE");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
@@ -522,19 +522,19 @@ ruleEdit returns [EObject current=null]
     }
 (
 (
-		lv_name_1_0=RULE_ID
-		{
-			newLeafNode(lv_name_1_0, grammarAccess.getEditAccess().getNameIDTerminalRuleCall_1_0()); 
-		}
-		{
+		{ 
+	        newCompositeNode(grammarAccess.getEditAccess().getNameFILEParserRuleCall_1_0()); 
+	    }
+		lv_name_1_0=ruleFILE		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getEditRule());
+	            $current = createModelElementForParent(grammarAccess.getEditRule());
 	        }
-       		setWithLastConsumed(
+       		set(
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"FILE");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
@@ -565,19 +565,19 @@ ruleDelete returns [EObject current=null]
     }
 (
 (
-		lv_name_1_0=RULE_ID
-		{
-			newLeafNode(lv_name_1_0, grammarAccess.getDeleteAccess().getNameIDTerminalRuleCall_1_0()); 
-		}
-		{
+		{ 
+	        newCompositeNode(grammarAccess.getDeleteAccess().getNameFILEParserRuleCall_1_0()); 
+	    }
+		lv_name_1_0=ruleFILE		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getDeleteRule());
+	            $current = createModelElementForParent(grammarAccess.getDeleteRule());
 	        }
-       		setWithLastConsumed(
+       		set(
        			$current, 
        			"name",
         		lv_name_1_0, 
-        		"ID");
+        		"FILE");
+	        afterParserOrEnumRuleCall();
 	    }
 
 )
@@ -623,6 +623,55 @@ ruleP4PORT returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
     newLeafNode(this_INT_2, grammarAccess.getP4PORTAccess().getINTTerminalRuleCall_2()); 
     }
 )
+    ;
+
+
+
+
+
+// Entry rule entryRuleFILE
+entryRuleFILE returns [String current=null] 
+	:
+	{ newCompositeNode(grammarAccess.getFILERule()); } 
+	 iv_ruleFILE=ruleFILE 
+	 { $current=$iv_ruleFILE.current.getText(); }  
+	 EOF 
+;
+
+// Rule FILE
+ruleFILE returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] 
+    @init { enterRule(); 
+    }
+    @after { leaveRule(); }:
+(    this_ID_0=RULE_ID    {
+		$current.merge(this_ID_0);
+    }
+
+    { 
+    newLeafNode(this_ID_0, grammarAccess.getFILEAccess().getIDTerminalRuleCall_0()); 
+    }
+
+    |(    this_ID_1=RULE_ID    {
+		$current.merge(this_ID_1);
+    }
+
+    { 
+    newLeafNode(this_ID_1, grammarAccess.getFILEAccess().getIDTerminalRuleCall_1_0()); 
+    }
+
+	kw='.' 
+    {
+        $current.merge(kw);
+        newLeafNode(kw, grammarAccess.getFILEAccess().getFullStopKeyword_1_1()); 
+    }
+    this_ID_3=RULE_ID    {
+		$current.merge(this_ID_3);
+    }
+
+    { 
+    newLeafNode(this_ID_3, grammarAccess.getFILEAccess().getIDTerminalRuleCall_1_2()); 
+    }
+))
     ;
 
 
