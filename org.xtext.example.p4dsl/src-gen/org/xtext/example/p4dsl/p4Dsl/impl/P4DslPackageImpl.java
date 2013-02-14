@@ -10,6 +10,7 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.xtext.example.p4dsl.p4Dsl.Add;
+import org.xtext.example.p4dsl.p4Dsl.Client;
 import org.xtext.example.p4dsl.p4Dsl.Command;
 import org.xtext.example.p4dsl.p4Dsl.Delete;
 import org.xtext.example.p4dsl.p4Dsl.Edit;
@@ -19,6 +20,8 @@ import org.xtext.example.p4dsl.p4Dsl.P4Command;
 import org.xtext.example.p4dsl.p4Dsl.P4DslFactory;
 import org.xtext.example.p4dsl.p4Dsl.P4DslPackage;
 import org.xtext.example.p4dsl.p4Dsl.PUCFlag;
+import org.xtext.example.p4dsl.p4Dsl.Port;
+import org.xtext.example.p4dsl.p4Dsl.User;
 
 /**
  * <!-- begin-user-doc -->
@@ -243,7 +246,7 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getPORT()
+  public EClass getPort()
   {
     return portEClass;
   }
@@ -253,7 +256,7 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getUSER()
+  public EClass getUser()
   {
     return userEClass;
   }
@@ -263,7 +266,7 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getCLIENT()
+  public EClass getClient()
   {
     return clientEClass;
   }
@@ -415,11 +418,11 @@ public class P4DslPackageImpl extends EPackageImpl implements P4DslPackage
     initEClass(pucFlagEClass, PUCFlag.class, "PUCFlag", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getPUCFlag_P4command(), this.getP4Command(), null, "p4command", null, 0, -1, PUCFlag.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(portEClass, org.xtext.example.p4dsl.p4Dsl.PORT.class, "PORT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(portEClass, Port.class, "Port", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(userEClass, org.xtext.example.p4dsl.p4Dsl.USER.class, "USER", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(clientEClass, org.xtext.example.p4dsl.p4Dsl.CLIENT.class, "CLIENT", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(clientEClass, Client.class, "Client", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(fileBasedCommandEClass, FileBasedCommand.class, "FileBasedCommand", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

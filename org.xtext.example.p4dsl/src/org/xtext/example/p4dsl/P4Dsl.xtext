@@ -1,58 +1,59 @@
+
 grammar org.xtext.example.p4dsl.P4Dsl with org.eclipse.xtext.common.Terminals
-
+ 
 generate p4Dsl "http://www.xtext.org/example/p4dsl/P4Dsl"
-
+ 
 Model:
-	command+=Command*
+ command+=Command*
 ;
-
+ 
 Command:
-	'p4' P4Command
+ 'p4' P4Command
 ;
-
+ 
 P4Command:
-	PUCFlag | FileBasedCommand
+ PUCFlag | FileBasedCommand
 ;
-	
-
+ 
+ 
 PUCFlag:
-	PORT | USER | CLIENT
+ Port| User | Client
 ;
-	
-PORT:
-	'-p' name = P4PORT
-	p4command += P4Command
+ 
+Port:
+ '-p' name = P4PORT
+ p4command += P4Command
 ;
-
-USER:
-	'-u' name = ID
-	p4command += P4Command
+ 
+User:
+ '-u' name = ID
+ p4command += P4Command
 ;
-
-CLIENT:
-	'-c' name = ID
-	p4command += P4Command
+ 
+Client:
+ '-c' name = ID
+ p4command += P4Command
 ;
-
+ 
 FileBasedCommand:
-	Add | Edit | Delete;
-
+ Add | Edit | Delete;
+ 
 Add:
-	'add' name = FILE
+ 'add' name = FILE
 ;
-
+ 
 Edit:
-	'edit' name = FILE
+ 'edit' name = FILE
 ;
-
+ 
 Delete:
-	'delete' name = FILE
+ 'delete' name = FILE
 ;
-	
+ 
 P4PORT:
-	ID ':' INT
+ ID ':' INT
 ;
-
+ 
 FILE:
-	ID | ID '.' ID
+ ID | ID '.' ID
 ;

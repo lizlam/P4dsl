@@ -13,9 +13,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="p4command" upperBound="-1"
         eType="#//P4Command" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PORT" eSuperTypes="#//PUCFlag"/>
-  <eClassifiers xsi:type="ecore:EClass" name="USER" eSuperTypes="#//PUCFlag"/>
-  <eClassifiers xsi:type="ecore:EClass" name="CLIENT" eSuperTypes="#//PUCFlag"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Port" eSuperTypes="#//PUCFlag"/>
+  <eClassifiers xsi:type="ecore:EClass" name="User" eSuperTypes="#//PUCFlag"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Client" eSuperTypes="#//PUCFlag"/>
   <eClassifiers xsi:type="ecore:EClass" name="FileBasedCommand" eSuperTypes="#//P4Command"/>
   <eClassifiers xsi:type="ecore:EClass" name="Add" eSuperTypes="#//FileBasedCommand"/>
   <eClassifiers xsi:type="ecore:EClass" name="Edit" eSuperTypes="#//FileBasedCommand"/>

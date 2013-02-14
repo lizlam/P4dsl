@@ -14,13 +14,13 @@ import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
 import org.xtext.example.p4dsl.p4Dsl.Add;
-import org.xtext.example.p4dsl.p4Dsl.CLIENT;
+import org.xtext.example.p4dsl.p4Dsl.Client;
 import org.xtext.example.p4dsl.p4Dsl.Delete;
 import org.xtext.example.p4dsl.p4Dsl.Edit;
 import org.xtext.example.p4dsl.p4Dsl.Model;
 import org.xtext.example.p4dsl.p4Dsl.P4DslPackage;
-import org.xtext.example.p4dsl.p4Dsl.PORT;
-import org.xtext.example.p4dsl.p4Dsl.USER;
+import org.xtext.example.p4dsl.p4Dsl.Port;
+import org.xtext.example.p4dsl.p4Dsl.User;
 import org.xtext.example.p4dsl.services.P4DslGrammarAccess;
 
 @SuppressWarnings("all")
@@ -41,11 +41,11 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 				}
 				else break;
 			case P4DslPackage.CLIENT:
-				if(context == grammarAccess.getCLIENTRule() ||
+				if(context == grammarAccess.getClientRule() ||
 				   context == grammarAccess.getCommandRule() ||
 				   context == grammarAccess.getP4CommandRule() ||
 				   context == grammarAccess.getPUCFlagRule()) {
-					sequence_CLIENT(context, (CLIENT) semanticObject); 
+					sequence_Client(context, (Client) semanticObject); 
 					return; 
 				}
 				else break;
@@ -76,9 +76,9 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 			case P4DslPackage.PORT:
 				if(context == grammarAccess.getCommandRule() ||
 				   context == grammarAccess.getP4CommandRule() ||
-				   context == grammarAccess.getPORTRule() ||
-				   context == grammarAccess.getPUCFlagRule()) {
-					sequence_PORT(context, (PORT) semanticObject); 
+				   context == grammarAccess.getPUCFlagRule() ||
+				   context == grammarAccess.getPortRule()) {
+					sequence_Port(context, (Port) semanticObject); 
 					return; 
 				}
 				else break;
@@ -86,8 +86,8 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 				if(context == grammarAccess.getCommandRule() ||
 				   context == grammarAccess.getP4CommandRule() ||
 				   context == grammarAccess.getPUCFlagRule() ||
-				   context == grammarAccess.getUSERRule()) {
-					sequence_USER(context, (USER) semanticObject); 
+				   context == grammarAccess.getUserRule()) {
+					sequence_User(context, (User) semanticObject); 
 					return; 
 				}
 				else break;
@@ -115,7 +115,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 * Constraint:
 	 *     (name=ID p4command+=P4Command)
 	 */
-	protected void sequence_CLIENT(EObject context, CLIENT semanticObject) {
+	protected void sequence_Client(EObject context, Client semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -165,7 +165,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 * Constraint:
 	 *     (name=P4PORT p4command+=P4Command)
 	 */
-	protected void sequence_PORT(EObject context, PORT semanticObject) {
+	protected void sequence_Port(EObject context, Port semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
@@ -174,7 +174,7 @@ public class P4DslSemanticSequencer extends AbstractDelegatingSemanticSequencer 
 	 * Constraint:
 	 *     (name=ID p4command+=P4Command)
 	 */
-	protected void sequence_USER(EObject context, USER semanticObject) {
+	protected void sequence_User(EObject context, User semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 }

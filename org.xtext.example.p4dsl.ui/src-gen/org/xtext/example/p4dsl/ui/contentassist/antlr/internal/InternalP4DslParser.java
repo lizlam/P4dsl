@@ -405,21 +405,21 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rulePUCFlag"
 
 
-    // $ANTLR start "entryRulePORT"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:172:1: entryRulePORT : rulePORT EOF ;
-    public final void entryRulePORT() throws RecognitionException {
+    // $ANTLR start "entryRulePort"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:172:1: entryRulePort : rulePort EOF ;
+    public final void entryRulePort() throws RecognitionException {
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:173:1: ( rulePORT EOF )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:174:1: rulePORT EOF
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:173:1: ( rulePort EOF )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:174:1: rulePort EOF
             {
-             before(grammarAccess.getPORTRule()); 
-            pushFollow(FOLLOW_rulePORT_in_entryRulePORT302);
-            rulePORT();
+             before(grammarAccess.getPortRule()); 
+            pushFollow(FOLLOW_rulePort_in_entryRulePort302);
+            rulePort();
 
             state._fsp--;
 
-             after(grammarAccess.getPORTRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePORT309); 
+             after(grammarAccess.getPortRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePort309); 
 
             }
 
@@ -432,35 +432,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "entryRulePORT"
+    // $ANTLR end "entryRulePort"
 
 
-    // $ANTLR start "rulePORT"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:181:1: rulePORT : ( ( rule__PORT__Group__0 ) ) ;
-    public final void rulePORT() throws RecognitionException {
+    // $ANTLR start "rulePort"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:181:1: rulePort : ( ( rule__Port__Group__0 ) ) ;
+    public final void rulePort() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:185:2: ( ( ( rule__PORT__Group__0 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:186:1: ( ( rule__PORT__Group__0 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:185:2: ( ( ( rule__Port__Group__0 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:186:1: ( ( rule__Port__Group__0 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:186:1: ( ( rule__PORT__Group__0 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:187:1: ( rule__PORT__Group__0 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:186:1: ( ( rule__Port__Group__0 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:187:1: ( rule__Port__Group__0 )
             {
-             before(grammarAccess.getPORTAccess().getGroup()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:188:1: ( rule__PORT__Group__0 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:188:2: rule__PORT__Group__0
+             before(grammarAccess.getPortAccess().getGroup()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:188:1: ( rule__Port__Group__0 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:188:2: rule__Port__Group__0
             {
-            pushFollow(FOLLOW_rule__PORT__Group__0_in_rulePORT335);
-            rule__PORT__Group__0();
+            pushFollow(FOLLOW_rule__Port__Group__0_in_rulePort335);
+            rule__Port__Group__0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getPORTAccess().getGroup()); 
+             after(grammarAccess.getPortAccess().getGroup()); 
 
             }
 
@@ -479,24 +479,24 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rulePORT"
+    // $ANTLR end "rulePort"
 
 
-    // $ANTLR start "entryRuleUSER"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:200:1: entryRuleUSER : ruleUSER EOF ;
-    public final void entryRuleUSER() throws RecognitionException {
+    // $ANTLR start "entryRuleUser"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:200:1: entryRuleUser : ruleUser EOF ;
+    public final void entryRuleUser() throws RecognitionException {
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:201:1: ( ruleUSER EOF )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:202:1: ruleUSER EOF
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:201:1: ( ruleUser EOF )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:202:1: ruleUser EOF
             {
-             before(grammarAccess.getUSERRule()); 
-            pushFollow(FOLLOW_ruleUSER_in_entryRuleUSER362);
-            ruleUSER();
+             before(grammarAccess.getUserRule()); 
+            pushFollow(FOLLOW_ruleUser_in_entryRuleUser362);
+            ruleUser();
 
             state._fsp--;
 
-             after(grammarAccess.getUSERRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleUSER369); 
+             after(grammarAccess.getUserRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleUser369); 
 
             }
 
@@ -509,35 +509,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "entryRuleUSER"
+    // $ANTLR end "entryRuleUser"
 
 
-    // $ANTLR start "ruleUSER"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:209:1: ruleUSER : ( ( rule__USER__Group__0 ) ) ;
-    public final void ruleUSER() throws RecognitionException {
+    // $ANTLR start "ruleUser"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:209:1: ruleUser : ( ( rule__User__Group__0 ) ) ;
+    public final void ruleUser() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:213:2: ( ( ( rule__USER__Group__0 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:214:1: ( ( rule__USER__Group__0 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:213:2: ( ( ( rule__User__Group__0 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:214:1: ( ( rule__User__Group__0 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:214:1: ( ( rule__USER__Group__0 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:215:1: ( rule__USER__Group__0 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:214:1: ( ( rule__User__Group__0 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:215:1: ( rule__User__Group__0 )
             {
-             before(grammarAccess.getUSERAccess().getGroup()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:216:1: ( rule__USER__Group__0 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:216:2: rule__USER__Group__0
+             before(grammarAccess.getUserAccess().getGroup()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:216:1: ( rule__User__Group__0 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:216:2: rule__User__Group__0
             {
-            pushFollow(FOLLOW_rule__USER__Group__0_in_ruleUSER395);
-            rule__USER__Group__0();
+            pushFollow(FOLLOW_rule__User__Group__0_in_ruleUser395);
+            rule__User__Group__0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getUSERAccess().getGroup()); 
+             after(grammarAccess.getUserAccess().getGroup()); 
 
             }
 
@@ -556,24 +556,24 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "ruleUSER"
+    // $ANTLR end "ruleUser"
 
 
-    // $ANTLR start "entryRuleCLIENT"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:228:1: entryRuleCLIENT : ruleCLIENT EOF ;
-    public final void entryRuleCLIENT() throws RecognitionException {
+    // $ANTLR start "entryRuleClient"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:228:1: entryRuleClient : ruleClient EOF ;
+    public final void entryRuleClient() throws RecognitionException {
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:229:1: ( ruleCLIENT EOF )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:230:1: ruleCLIENT EOF
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:229:1: ( ruleClient EOF )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:230:1: ruleClient EOF
             {
-             before(grammarAccess.getCLIENTRule()); 
-            pushFollow(FOLLOW_ruleCLIENT_in_entryRuleCLIENT422);
-            ruleCLIENT();
+             before(grammarAccess.getClientRule()); 
+            pushFollow(FOLLOW_ruleClient_in_entryRuleClient422);
+            ruleClient();
 
             state._fsp--;
 
-             after(grammarAccess.getCLIENTRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleCLIENT429); 
+             after(grammarAccess.getClientRule()); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClient429); 
 
             }
 
@@ -586,35 +586,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "entryRuleCLIENT"
+    // $ANTLR end "entryRuleClient"
 
 
-    // $ANTLR start "ruleCLIENT"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:237:1: ruleCLIENT : ( ( rule__CLIENT__Group__0 ) ) ;
-    public final void ruleCLIENT() throws RecognitionException {
+    // $ANTLR start "ruleClient"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:237:1: ruleClient : ( ( rule__Client__Group__0 ) ) ;
+    public final void ruleClient() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:241:2: ( ( ( rule__CLIENT__Group__0 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:242:1: ( ( rule__CLIENT__Group__0 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:241:2: ( ( ( rule__Client__Group__0 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:242:1: ( ( rule__Client__Group__0 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:242:1: ( ( rule__CLIENT__Group__0 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:243:1: ( rule__CLIENT__Group__0 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:242:1: ( ( rule__Client__Group__0 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:243:1: ( rule__Client__Group__0 )
             {
-             before(grammarAccess.getCLIENTAccess().getGroup()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:244:1: ( rule__CLIENT__Group__0 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:244:2: rule__CLIENT__Group__0
+             before(grammarAccess.getClientAccess().getGroup()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:244:1: ( rule__Client__Group__0 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:244:2: rule__Client__Group__0
             {
-            pushFollow(FOLLOW_rule__CLIENT__Group__0_in_ruleCLIENT455);
-            rule__CLIENT__Group__0();
+            pushFollow(FOLLOW_rule__Client__Group__0_in_ruleClient455);
+            rule__Client__Group__0();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCLIENTAccess().getGroup()); 
+             after(grammarAccess.getClientAccess().getGroup()); 
 
             }
 
@@ -633,7 +633,7 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "ruleCLIENT"
+    // $ANTLR end "ruleClient"
 
 
     // $ANTLR start "entryRuleFileBasedCommand"
@@ -1178,13 +1178,13 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__PUCFlag__Alternatives"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:446:1: rule__PUCFlag__Alternatives : ( ( rulePORT ) | ( ruleUSER ) | ( ruleCLIENT ) );
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:446:1: rule__PUCFlag__Alternatives : ( ( rulePort ) | ( ruleUser ) | ( ruleClient ) );
     public final void rule__PUCFlag__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:450:1: ( ( rulePORT ) | ( ruleUSER ) | ( ruleCLIENT ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:450:1: ( ( rulePort ) | ( ruleUser ) | ( ruleClient ) )
             int alt3=3;
             switch ( input.LA(1) ) {
             case 12:
@@ -1211,18 +1211,18 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
 
             switch (alt3) {
                 case 1 :
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:451:1: ( rulePORT )
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:451:1: ( rulePort )
                     {
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:451:1: ( rulePORT )
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:452:1: rulePORT
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:451:1: ( rulePort )
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:452:1: rulePort
                     {
-                     before(grammarAccess.getPUCFlagAccess().getPORTParserRuleCall_0()); 
-                    pushFollow(FOLLOW_rulePORT_in_rule__PUCFlag__Alternatives900);
-                    rulePORT();
+                     before(grammarAccess.getPUCFlagAccess().getPortParserRuleCall_0()); 
+                    pushFollow(FOLLOW_rulePort_in_rule__PUCFlag__Alternatives900);
+                    rulePort();
 
                     state._fsp--;
 
-                     after(grammarAccess.getPUCFlagAccess().getPORTParserRuleCall_0()); 
+                     after(grammarAccess.getPUCFlagAccess().getPortParserRuleCall_0()); 
 
                     }
 
@@ -1230,18 +1230,18 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:457:6: ( ruleUSER )
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:457:6: ( ruleUser )
                     {
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:457:6: ( ruleUSER )
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:458:1: ruleUSER
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:457:6: ( ruleUser )
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:458:1: ruleUser
                     {
-                     before(grammarAccess.getPUCFlagAccess().getUSERParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleUSER_in_rule__PUCFlag__Alternatives917);
-                    ruleUSER();
+                     before(grammarAccess.getPUCFlagAccess().getUserParserRuleCall_1()); 
+                    pushFollow(FOLLOW_ruleUser_in_rule__PUCFlag__Alternatives917);
+                    ruleUser();
 
                     state._fsp--;
 
-                     after(grammarAccess.getPUCFlagAccess().getUSERParserRuleCall_1()); 
+                     after(grammarAccess.getPUCFlagAccess().getUserParserRuleCall_1()); 
 
                     }
 
@@ -1249,18 +1249,18 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:463:6: ( ruleCLIENT )
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:463:6: ( ruleClient )
                     {
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:463:6: ( ruleCLIENT )
-                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:464:1: ruleCLIENT
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:463:6: ( ruleClient )
+                    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:464:1: ruleClient
                     {
-                     before(grammarAccess.getPUCFlagAccess().getCLIENTParserRuleCall_2()); 
-                    pushFollow(FOLLOW_ruleCLIENT_in_rule__PUCFlag__Alternatives934);
-                    ruleCLIENT();
+                     before(grammarAccess.getPUCFlagAccess().getClientParserRuleCall_2()); 
+                    pushFollow(FOLLOW_ruleClient_in_rule__PUCFlag__Alternatives934);
+                    ruleClient();
 
                     state._fsp--;
 
-                     after(grammarAccess.getPUCFlagAccess().getCLIENTParserRuleCall_2()); 
+                     after(grammarAccess.getPUCFlagAccess().getClientParserRuleCall_2()); 
 
                     }
 
@@ -1631,23 +1631,23 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Command__Group__1__Impl"
 
 
-    // $ANTLR start "rule__PORT__Group__0"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:589:1: rule__PORT__Group__0 : rule__PORT__Group__0__Impl rule__PORT__Group__1 ;
-    public final void rule__PORT__Group__0() throws RecognitionException {
+    // $ANTLR start "rule__Port__Group__0"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:589:1: rule__Port__Group__0 : rule__Port__Group__0__Impl rule__Port__Group__1 ;
+    public final void rule__Port__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:593:1: ( rule__PORT__Group__0__Impl rule__PORT__Group__1 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:594:2: rule__PORT__Group__0__Impl rule__PORT__Group__1
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:593:1: ( rule__Port__Group__0__Impl rule__Port__Group__1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:594:2: rule__Port__Group__0__Impl rule__Port__Group__1
             {
-            pushFollow(FOLLOW_rule__PORT__Group__0__Impl_in_rule__PORT__Group__01202);
-            rule__PORT__Group__0__Impl();
+            pushFollow(FOLLOW_rule__Port__Group__0__Impl_in_rule__Port__Group__01202);
+            rule__Port__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PORT__Group__1_in_rule__PORT__Group__01205);
-            rule__PORT__Group__1();
+            pushFollow(FOLLOW_rule__Port__Group__1_in_rule__Port__Group__01205);
+            rule__Port__Group__1();
 
             state._fsp--;
 
@@ -1666,12 +1666,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__Group__0"
+    // $ANTLR end "rule__Port__Group__0"
 
 
-    // $ANTLR start "rule__PORT__Group__0__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:601:1: rule__PORT__Group__0__Impl : ( '-p' ) ;
-    public final void rule__PORT__Group__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Port__Group__0__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:601:1: rule__Port__Group__0__Impl : ( '-p' ) ;
+    public final void rule__Port__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -1682,9 +1682,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:606:1: ( '-p' )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:607:1: '-p'
             {
-             before(grammarAccess.getPORTAccess().getPKeyword_0()); 
-            match(input,12,FOLLOW_12_in_rule__PORT__Group__0__Impl1233); 
-             after(grammarAccess.getPORTAccess().getPKeyword_0()); 
+             before(grammarAccess.getPortAccess().getPKeyword_0()); 
+            match(input,12,FOLLOW_12_in_rule__Port__Group__0__Impl1233); 
+             after(grammarAccess.getPortAccess().getPKeyword_0()); 
 
             }
 
@@ -1703,26 +1703,26 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__Group__0__Impl"
+    // $ANTLR end "rule__Port__Group__0__Impl"
 
 
-    // $ANTLR start "rule__PORT__Group__1"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:620:1: rule__PORT__Group__1 : rule__PORT__Group__1__Impl rule__PORT__Group__2 ;
-    public final void rule__PORT__Group__1() throws RecognitionException {
+    // $ANTLR start "rule__Port__Group__1"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:620:1: rule__Port__Group__1 : rule__Port__Group__1__Impl rule__Port__Group__2 ;
+    public final void rule__Port__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:624:1: ( rule__PORT__Group__1__Impl rule__PORT__Group__2 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:625:2: rule__PORT__Group__1__Impl rule__PORT__Group__2
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:624:1: ( rule__Port__Group__1__Impl rule__Port__Group__2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:625:2: rule__Port__Group__1__Impl rule__Port__Group__2
             {
-            pushFollow(FOLLOW_rule__PORT__Group__1__Impl_in_rule__PORT__Group__11264);
-            rule__PORT__Group__1__Impl();
+            pushFollow(FOLLOW_rule__Port__Group__1__Impl_in_rule__Port__Group__11264);
+            rule__Port__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__PORT__Group__2_in_rule__PORT__Group__11267);
-            rule__PORT__Group__2();
+            pushFollow(FOLLOW_rule__Port__Group__2_in_rule__Port__Group__11267);
+            rule__Port__Group__2();
 
             state._fsp--;
 
@@ -1741,35 +1741,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__Group__1"
+    // $ANTLR end "rule__Port__Group__1"
 
 
-    // $ANTLR start "rule__PORT__Group__1__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:632:1: rule__PORT__Group__1__Impl : ( ( rule__PORT__NameAssignment_1 ) ) ;
-    public final void rule__PORT__Group__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Port__Group__1__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:632:1: rule__Port__Group__1__Impl : ( ( rule__Port__NameAssignment_1 ) ) ;
+    public final void rule__Port__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:636:1: ( ( ( rule__PORT__NameAssignment_1 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:637:1: ( ( rule__PORT__NameAssignment_1 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:636:1: ( ( ( rule__Port__NameAssignment_1 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:637:1: ( ( rule__Port__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:637:1: ( ( rule__PORT__NameAssignment_1 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:638:1: ( rule__PORT__NameAssignment_1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:637:1: ( ( rule__Port__NameAssignment_1 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:638:1: ( rule__Port__NameAssignment_1 )
             {
-             before(grammarAccess.getPORTAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:639:1: ( rule__PORT__NameAssignment_1 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:639:2: rule__PORT__NameAssignment_1
+             before(grammarAccess.getPortAccess().getNameAssignment_1()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:639:1: ( rule__Port__NameAssignment_1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:639:2: rule__Port__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__PORT__NameAssignment_1_in_rule__PORT__Group__1__Impl1294);
-            rule__PORT__NameAssignment_1();
+            pushFollow(FOLLOW_rule__Port__NameAssignment_1_in_rule__Port__Group__1__Impl1294);
+            rule__Port__NameAssignment_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getPORTAccess().getNameAssignment_1()); 
+             after(grammarAccess.getPortAccess().getNameAssignment_1()); 
 
             }
 
@@ -1788,21 +1788,21 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__Group__1__Impl"
+    // $ANTLR end "rule__Port__Group__1__Impl"
 
 
-    // $ANTLR start "rule__PORT__Group__2"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:649:1: rule__PORT__Group__2 : rule__PORT__Group__2__Impl ;
-    public final void rule__PORT__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__Port__Group__2"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:649:1: rule__Port__Group__2 : rule__Port__Group__2__Impl ;
+    public final void rule__Port__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:653:1: ( rule__PORT__Group__2__Impl )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:654:2: rule__PORT__Group__2__Impl
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:653:1: ( rule__Port__Group__2__Impl )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:654:2: rule__Port__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__PORT__Group__2__Impl_in_rule__PORT__Group__21324);
-            rule__PORT__Group__2__Impl();
+            pushFollow(FOLLOW_rule__Port__Group__2__Impl_in_rule__Port__Group__21324);
+            rule__Port__Group__2__Impl();
 
             state._fsp--;
 
@@ -1821,35 +1821,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__Group__2"
+    // $ANTLR end "rule__Port__Group__2"
 
 
-    // $ANTLR start "rule__PORT__Group__2__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:660:1: rule__PORT__Group__2__Impl : ( ( rule__PORT__P4commandAssignment_2 ) ) ;
-    public final void rule__PORT__Group__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Port__Group__2__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:660:1: rule__Port__Group__2__Impl : ( ( rule__Port__P4commandAssignment_2 ) ) ;
+    public final void rule__Port__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:664:1: ( ( ( rule__PORT__P4commandAssignment_2 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:665:1: ( ( rule__PORT__P4commandAssignment_2 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:664:1: ( ( ( rule__Port__P4commandAssignment_2 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:665:1: ( ( rule__Port__P4commandAssignment_2 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:665:1: ( ( rule__PORT__P4commandAssignment_2 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:666:1: ( rule__PORT__P4commandAssignment_2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:665:1: ( ( rule__Port__P4commandAssignment_2 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:666:1: ( rule__Port__P4commandAssignment_2 )
             {
-             before(grammarAccess.getPORTAccess().getP4commandAssignment_2()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:667:1: ( rule__PORT__P4commandAssignment_2 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:667:2: rule__PORT__P4commandAssignment_2
+             before(grammarAccess.getPortAccess().getP4commandAssignment_2()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:667:1: ( rule__Port__P4commandAssignment_2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:667:2: rule__Port__P4commandAssignment_2
             {
-            pushFollow(FOLLOW_rule__PORT__P4commandAssignment_2_in_rule__PORT__Group__2__Impl1351);
-            rule__PORT__P4commandAssignment_2();
+            pushFollow(FOLLOW_rule__Port__P4commandAssignment_2_in_rule__Port__Group__2__Impl1351);
+            rule__Port__P4commandAssignment_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getPORTAccess().getP4commandAssignment_2()); 
+             after(grammarAccess.getPortAccess().getP4commandAssignment_2()); 
 
             }
 
@@ -1868,26 +1868,26 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__Group__2__Impl"
+    // $ANTLR end "rule__Port__Group__2__Impl"
 
 
-    // $ANTLR start "rule__USER__Group__0"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:683:1: rule__USER__Group__0 : rule__USER__Group__0__Impl rule__USER__Group__1 ;
-    public final void rule__USER__Group__0() throws RecognitionException {
+    // $ANTLR start "rule__User__Group__0"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:683:1: rule__User__Group__0 : rule__User__Group__0__Impl rule__User__Group__1 ;
+    public final void rule__User__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:687:1: ( rule__USER__Group__0__Impl rule__USER__Group__1 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:688:2: rule__USER__Group__0__Impl rule__USER__Group__1
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:687:1: ( rule__User__Group__0__Impl rule__User__Group__1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:688:2: rule__User__Group__0__Impl rule__User__Group__1
             {
-            pushFollow(FOLLOW_rule__USER__Group__0__Impl_in_rule__USER__Group__01387);
-            rule__USER__Group__0__Impl();
+            pushFollow(FOLLOW_rule__User__Group__0__Impl_in_rule__User__Group__01387);
+            rule__User__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__USER__Group__1_in_rule__USER__Group__01390);
-            rule__USER__Group__1();
+            pushFollow(FOLLOW_rule__User__Group__1_in_rule__User__Group__01390);
+            rule__User__Group__1();
 
             state._fsp--;
 
@@ -1906,12 +1906,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__Group__0"
+    // $ANTLR end "rule__User__Group__0"
 
 
-    // $ANTLR start "rule__USER__Group__0__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:695:1: rule__USER__Group__0__Impl : ( '-u' ) ;
-    public final void rule__USER__Group__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__User__Group__0__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:695:1: rule__User__Group__0__Impl : ( '-u' ) ;
+    public final void rule__User__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -1922,9 +1922,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:700:1: ( '-u' )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:701:1: '-u'
             {
-             before(grammarAccess.getUSERAccess().getUKeyword_0()); 
-            match(input,13,FOLLOW_13_in_rule__USER__Group__0__Impl1418); 
-             after(grammarAccess.getUSERAccess().getUKeyword_0()); 
+             before(grammarAccess.getUserAccess().getUKeyword_0()); 
+            match(input,13,FOLLOW_13_in_rule__User__Group__0__Impl1418); 
+             after(grammarAccess.getUserAccess().getUKeyword_0()); 
 
             }
 
@@ -1943,26 +1943,26 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__Group__0__Impl"
+    // $ANTLR end "rule__User__Group__0__Impl"
 
 
-    // $ANTLR start "rule__USER__Group__1"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:714:1: rule__USER__Group__1 : rule__USER__Group__1__Impl rule__USER__Group__2 ;
-    public final void rule__USER__Group__1() throws RecognitionException {
+    // $ANTLR start "rule__User__Group__1"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:714:1: rule__User__Group__1 : rule__User__Group__1__Impl rule__User__Group__2 ;
+    public final void rule__User__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:718:1: ( rule__USER__Group__1__Impl rule__USER__Group__2 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:719:2: rule__USER__Group__1__Impl rule__USER__Group__2
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:718:1: ( rule__User__Group__1__Impl rule__User__Group__2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:719:2: rule__User__Group__1__Impl rule__User__Group__2
             {
-            pushFollow(FOLLOW_rule__USER__Group__1__Impl_in_rule__USER__Group__11449);
-            rule__USER__Group__1__Impl();
+            pushFollow(FOLLOW_rule__User__Group__1__Impl_in_rule__User__Group__11449);
+            rule__User__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__USER__Group__2_in_rule__USER__Group__11452);
-            rule__USER__Group__2();
+            pushFollow(FOLLOW_rule__User__Group__2_in_rule__User__Group__11452);
+            rule__User__Group__2();
 
             state._fsp--;
 
@@ -1981,35 +1981,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__Group__1"
+    // $ANTLR end "rule__User__Group__1"
 
 
-    // $ANTLR start "rule__USER__Group__1__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:726:1: rule__USER__Group__1__Impl : ( ( rule__USER__NameAssignment_1 ) ) ;
-    public final void rule__USER__Group__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__User__Group__1__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:726:1: rule__User__Group__1__Impl : ( ( rule__User__NameAssignment_1 ) ) ;
+    public final void rule__User__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:730:1: ( ( ( rule__USER__NameAssignment_1 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:731:1: ( ( rule__USER__NameAssignment_1 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:730:1: ( ( ( rule__User__NameAssignment_1 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:731:1: ( ( rule__User__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:731:1: ( ( rule__USER__NameAssignment_1 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:732:1: ( rule__USER__NameAssignment_1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:731:1: ( ( rule__User__NameAssignment_1 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:732:1: ( rule__User__NameAssignment_1 )
             {
-             before(grammarAccess.getUSERAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:733:1: ( rule__USER__NameAssignment_1 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:733:2: rule__USER__NameAssignment_1
+             before(grammarAccess.getUserAccess().getNameAssignment_1()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:733:1: ( rule__User__NameAssignment_1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:733:2: rule__User__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__USER__NameAssignment_1_in_rule__USER__Group__1__Impl1479);
-            rule__USER__NameAssignment_1();
+            pushFollow(FOLLOW_rule__User__NameAssignment_1_in_rule__User__Group__1__Impl1479);
+            rule__User__NameAssignment_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getUSERAccess().getNameAssignment_1()); 
+             after(grammarAccess.getUserAccess().getNameAssignment_1()); 
 
             }
 
@@ -2028,21 +2028,21 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__Group__1__Impl"
+    // $ANTLR end "rule__User__Group__1__Impl"
 
 
-    // $ANTLR start "rule__USER__Group__2"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:743:1: rule__USER__Group__2 : rule__USER__Group__2__Impl ;
-    public final void rule__USER__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__User__Group__2"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:743:1: rule__User__Group__2 : rule__User__Group__2__Impl ;
+    public final void rule__User__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:747:1: ( rule__USER__Group__2__Impl )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:748:2: rule__USER__Group__2__Impl
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:747:1: ( rule__User__Group__2__Impl )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:748:2: rule__User__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__USER__Group__2__Impl_in_rule__USER__Group__21509);
-            rule__USER__Group__2__Impl();
+            pushFollow(FOLLOW_rule__User__Group__2__Impl_in_rule__User__Group__21509);
+            rule__User__Group__2__Impl();
 
             state._fsp--;
 
@@ -2061,35 +2061,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__Group__2"
+    // $ANTLR end "rule__User__Group__2"
 
 
-    // $ANTLR start "rule__USER__Group__2__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:754:1: rule__USER__Group__2__Impl : ( ( rule__USER__P4commandAssignment_2 ) ) ;
-    public final void rule__USER__Group__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__User__Group__2__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:754:1: rule__User__Group__2__Impl : ( ( rule__User__P4commandAssignment_2 ) ) ;
+    public final void rule__User__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:758:1: ( ( ( rule__USER__P4commandAssignment_2 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:759:1: ( ( rule__USER__P4commandAssignment_2 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:758:1: ( ( ( rule__User__P4commandAssignment_2 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:759:1: ( ( rule__User__P4commandAssignment_2 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:759:1: ( ( rule__USER__P4commandAssignment_2 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:760:1: ( rule__USER__P4commandAssignment_2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:759:1: ( ( rule__User__P4commandAssignment_2 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:760:1: ( rule__User__P4commandAssignment_2 )
             {
-             before(grammarAccess.getUSERAccess().getP4commandAssignment_2()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:761:1: ( rule__USER__P4commandAssignment_2 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:761:2: rule__USER__P4commandAssignment_2
+             before(grammarAccess.getUserAccess().getP4commandAssignment_2()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:761:1: ( rule__User__P4commandAssignment_2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:761:2: rule__User__P4commandAssignment_2
             {
-            pushFollow(FOLLOW_rule__USER__P4commandAssignment_2_in_rule__USER__Group__2__Impl1536);
-            rule__USER__P4commandAssignment_2();
+            pushFollow(FOLLOW_rule__User__P4commandAssignment_2_in_rule__User__Group__2__Impl1536);
+            rule__User__P4commandAssignment_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getUSERAccess().getP4commandAssignment_2()); 
+             after(grammarAccess.getUserAccess().getP4commandAssignment_2()); 
 
             }
 
@@ -2108,26 +2108,26 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__Group__2__Impl"
+    // $ANTLR end "rule__User__Group__2__Impl"
 
 
-    // $ANTLR start "rule__CLIENT__Group__0"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:777:1: rule__CLIENT__Group__0 : rule__CLIENT__Group__0__Impl rule__CLIENT__Group__1 ;
-    public final void rule__CLIENT__Group__0() throws RecognitionException {
+    // $ANTLR start "rule__Client__Group__0"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:777:1: rule__Client__Group__0 : rule__Client__Group__0__Impl rule__Client__Group__1 ;
+    public final void rule__Client__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:781:1: ( rule__CLIENT__Group__0__Impl rule__CLIENT__Group__1 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:782:2: rule__CLIENT__Group__0__Impl rule__CLIENT__Group__1
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:781:1: ( rule__Client__Group__0__Impl rule__Client__Group__1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:782:2: rule__Client__Group__0__Impl rule__Client__Group__1
             {
-            pushFollow(FOLLOW_rule__CLIENT__Group__0__Impl_in_rule__CLIENT__Group__01572);
-            rule__CLIENT__Group__0__Impl();
+            pushFollow(FOLLOW_rule__Client__Group__0__Impl_in_rule__Client__Group__01572);
+            rule__Client__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__CLIENT__Group__1_in_rule__CLIENT__Group__01575);
-            rule__CLIENT__Group__1();
+            pushFollow(FOLLOW_rule__Client__Group__1_in_rule__Client__Group__01575);
+            rule__Client__Group__1();
 
             state._fsp--;
 
@@ -2146,12 +2146,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__Group__0"
+    // $ANTLR end "rule__Client__Group__0"
 
 
-    // $ANTLR start "rule__CLIENT__Group__0__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:789:1: rule__CLIENT__Group__0__Impl : ( '-c' ) ;
-    public final void rule__CLIENT__Group__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Client__Group__0__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:789:1: rule__Client__Group__0__Impl : ( '-c' ) ;
+    public final void rule__Client__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -2162,9 +2162,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:794:1: ( '-c' )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:795:1: '-c'
             {
-             before(grammarAccess.getCLIENTAccess().getCKeyword_0()); 
-            match(input,14,FOLLOW_14_in_rule__CLIENT__Group__0__Impl1603); 
-             after(grammarAccess.getCLIENTAccess().getCKeyword_0()); 
+             before(grammarAccess.getClientAccess().getCKeyword_0()); 
+            match(input,14,FOLLOW_14_in_rule__Client__Group__0__Impl1603); 
+             after(grammarAccess.getClientAccess().getCKeyword_0()); 
 
             }
 
@@ -2183,26 +2183,26 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__Group__0__Impl"
+    // $ANTLR end "rule__Client__Group__0__Impl"
 
 
-    // $ANTLR start "rule__CLIENT__Group__1"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:808:1: rule__CLIENT__Group__1 : rule__CLIENT__Group__1__Impl rule__CLIENT__Group__2 ;
-    public final void rule__CLIENT__Group__1() throws RecognitionException {
+    // $ANTLR start "rule__Client__Group__1"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:808:1: rule__Client__Group__1 : rule__Client__Group__1__Impl rule__Client__Group__2 ;
+    public final void rule__Client__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:812:1: ( rule__CLIENT__Group__1__Impl rule__CLIENT__Group__2 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:813:2: rule__CLIENT__Group__1__Impl rule__CLIENT__Group__2
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:812:1: ( rule__Client__Group__1__Impl rule__Client__Group__2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:813:2: rule__Client__Group__1__Impl rule__Client__Group__2
             {
-            pushFollow(FOLLOW_rule__CLIENT__Group__1__Impl_in_rule__CLIENT__Group__11634);
-            rule__CLIENT__Group__1__Impl();
+            pushFollow(FOLLOW_rule__Client__Group__1__Impl_in_rule__Client__Group__11634);
+            rule__Client__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__CLIENT__Group__2_in_rule__CLIENT__Group__11637);
-            rule__CLIENT__Group__2();
+            pushFollow(FOLLOW_rule__Client__Group__2_in_rule__Client__Group__11637);
+            rule__Client__Group__2();
 
             state._fsp--;
 
@@ -2221,35 +2221,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__Group__1"
+    // $ANTLR end "rule__Client__Group__1"
 
 
-    // $ANTLR start "rule__CLIENT__Group__1__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:820:1: rule__CLIENT__Group__1__Impl : ( ( rule__CLIENT__NameAssignment_1 ) ) ;
-    public final void rule__CLIENT__Group__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Client__Group__1__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:820:1: rule__Client__Group__1__Impl : ( ( rule__Client__NameAssignment_1 ) ) ;
+    public final void rule__Client__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:824:1: ( ( ( rule__CLIENT__NameAssignment_1 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:825:1: ( ( rule__CLIENT__NameAssignment_1 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:824:1: ( ( ( rule__Client__NameAssignment_1 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:825:1: ( ( rule__Client__NameAssignment_1 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:825:1: ( ( rule__CLIENT__NameAssignment_1 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:826:1: ( rule__CLIENT__NameAssignment_1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:825:1: ( ( rule__Client__NameAssignment_1 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:826:1: ( rule__Client__NameAssignment_1 )
             {
-             before(grammarAccess.getCLIENTAccess().getNameAssignment_1()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:827:1: ( rule__CLIENT__NameAssignment_1 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:827:2: rule__CLIENT__NameAssignment_1
+             before(grammarAccess.getClientAccess().getNameAssignment_1()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:827:1: ( rule__Client__NameAssignment_1 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:827:2: rule__Client__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__CLIENT__NameAssignment_1_in_rule__CLIENT__Group__1__Impl1664);
-            rule__CLIENT__NameAssignment_1();
+            pushFollow(FOLLOW_rule__Client__NameAssignment_1_in_rule__Client__Group__1__Impl1664);
+            rule__Client__NameAssignment_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCLIENTAccess().getNameAssignment_1()); 
+             after(grammarAccess.getClientAccess().getNameAssignment_1()); 
 
             }
 
@@ -2268,21 +2268,21 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__Group__1__Impl"
+    // $ANTLR end "rule__Client__Group__1__Impl"
 
 
-    // $ANTLR start "rule__CLIENT__Group__2"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:837:1: rule__CLIENT__Group__2 : rule__CLIENT__Group__2__Impl ;
-    public final void rule__CLIENT__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__Client__Group__2"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:837:1: rule__Client__Group__2 : rule__Client__Group__2__Impl ;
+    public final void rule__Client__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:841:1: ( rule__CLIENT__Group__2__Impl )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:842:2: rule__CLIENT__Group__2__Impl
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:841:1: ( rule__Client__Group__2__Impl )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:842:2: rule__Client__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__CLIENT__Group__2__Impl_in_rule__CLIENT__Group__21694);
-            rule__CLIENT__Group__2__Impl();
+            pushFollow(FOLLOW_rule__Client__Group__2__Impl_in_rule__Client__Group__21694);
+            rule__Client__Group__2__Impl();
 
             state._fsp--;
 
@@ -2301,35 +2301,35 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__Group__2"
+    // $ANTLR end "rule__Client__Group__2"
 
 
-    // $ANTLR start "rule__CLIENT__Group__2__Impl"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:848:1: rule__CLIENT__Group__2__Impl : ( ( rule__CLIENT__P4commandAssignment_2 ) ) ;
-    public final void rule__CLIENT__Group__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Client__Group__2__Impl"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:848:1: rule__Client__Group__2__Impl : ( ( rule__Client__P4commandAssignment_2 ) ) ;
+    public final void rule__Client__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:852:1: ( ( ( rule__CLIENT__P4commandAssignment_2 ) ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:853:1: ( ( rule__CLIENT__P4commandAssignment_2 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:852:1: ( ( ( rule__Client__P4commandAssignment_2 ) ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:853:1: ( ( rule__Client__P4commandAssignment_2 ) )
             {
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:853:1: ( ( rule__CLIENT__P4commandAssignment_2 ) )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:854:1: ( rule__CLIENT__P4commandAssignment_2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:853:1: ( ( rule__Client__P4commandAssignment_2 ) )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:854:1: ( rule__Client__P4commandAssignment_2 )
             {
-             before(grammarAccess.getCLIENTAccess().getP4commandAssignment_2()); 
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:855:1: ( rule__CLIENT__P4commandAssignment_2 )
-            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:855:2: rule__CLIENT__P4commandAssignment_2
+             before(grammarAccess.getClientAccess().getP4commandAssignment_2()); 
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:855:1: ( rule__Client__P4commandAssignment_2 )
+            // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:855:2: rule__Client__P4commandAssignment_2
             {
-            pushFollow(FOLLOW_rule__CLIENT__P4commandAssignment_2_in_rule__CLIENT__Group__2__Impl1721);
-            rule__CLIENT__P4commandAssignment_2();
+            pushFollow(FOLLOW_rule__Client__P4commandAssignment_2_in_rule__Client__Group__2__Impl1721);
+            rule__Client__P4commandAssignment_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCLIENTAccess().getP4commandAssignment_2()); 
+             after(grammarAccess.getClientAccess().getP4commandAssignment_2()); 
 
             }
 
@@ -2348,7 +2348,7 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__Group__2__Impl"
+    // $ANTLR end "rule__Client__Group__2__Impl"
 
 
     // $ANTLR start "rule__Add__Group__0"
@@ -3297,9 +3297,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Model__CommandAssignment"
 
 
-    // $ANTLR start "rule__PORT__NameAssignment_1"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1264:1: rule__PORT__NameAssignment_1 : ( ruleP4PORT ) ;
-    public final void rule__PORT__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__Port__NameAssignment_1"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1264:1: rule__Port__NameAssignment_1 : ( ruleP4PORT ) ;
+    public final void rule__Port__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3310,13 +3310,13 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1269:1: ( ruleP4PORT )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1270:1: ruleP4PORT
             {
-             before(grammarAccess.getPORTAccess().getNameP4PORTParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleP4PORT_in_rule__PORT__NameAssignment_12528);
+             before(grammarAccess.getPortAccess().getNameP4PORTParserRuleCall_1_0()); 
+            pushFollow(FOLLOW_ruleP4PORT_in_rule__Port__NameAssignment_12528);
             ruleP4PORT();
 
             state._fsp--;
 
-             after(grammarAccess.getPORTAccess().getNameP4PORTParserRuleCall_1_0()); 
+             after(grammarAccess.getPortAccess().getNameP4PORTParserRuleCall_1_0()); 
 
             }
 
@@ -3335,12 +3335,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__NameAssignment_1"
+    // $ANTLR end "rule__Port__NameAssignment_1"
 
 
-    // $ANTLR start "rule__PORT__P4commandAssignment_2"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1279:1: rule__PORT__P4commandAssignment_2 : ( ruleP4Command ) ;
-    public final void rule__PORT__P4commandAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__Port__P4commandAssignment_2"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1279:1: rule__Port__P4commandAssignment_2 : ( ruleP4Command ) ;
+    public final void rule__Port__P4commandAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3351,13 +3351,13 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1284:1: ( ruleP4Command )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1285:1: ruleP4Command
             {
-             before(grammarAccess.getPORTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleP4Command_in_rule__PORT__P4commandAssignment_22559);
+             before(grammarAccess.getPortAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+            pushFollow(FOLLOW_ruleP4Command_in_rule__Port__P4commandAssignment_22559);
             ruleP4Command();
 
             state._fsp--;
 
-             after(grammarAccess.getPORTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+             after(grammarAccess.getPortAccess().getP4commandP4CommandParserRuleCall_2_0()); 
 
             }
 
@@ -3376,12 +3376,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__PORT__P4commandAssignment_2"
+    // $ANTLR end "rule__Port__P4commandAssignment_2"
 
 
-    // $ANTLR start "rule__USER__NameAssignment_1"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1294:1: rule__USER__NameAssignment_1 : ( RULE_ID ) ;
-    public final void rule__USER__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__User__NameAssignment_1"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1294:1: rule__User__NameAssignment_1 : ( RULE_ID ) ;
+    public final void rule__User__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3392,9 +3392,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1299:1: ( RULE_ID )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1300:1: RULE_ID
             {
-             before(grammarAccess.getUSERAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__USER__NameAssignment_12590); 
-             after(grammarAccess.getUSERAccess().getNameIDTerminalRuleCall_1_0()); 
+             before(grammarAccess.getUserAccess().getNameIDTerminalRuleCall_1_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__User__NameAssignment_12590); 
+             after(grammarAccess.getUserAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
 
@@ -3413,12 +3413,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__NameAssignment_1"
+    // $ANTLR end "rule__User__NameAssignment_1"
 
 
-    // $ANTLR start "rule__USER__P4commandAssignment_2"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1309:1: rule__USER__P4commandAssignment_2 : ( ruleP4Command ) ;
-    public final void rule__USER__P4commandAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__User__P4commandAssignment_2"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1309:1: rule__User__P4commandAssignment_2 : ( ruleP4Command ) ;
+    public final void rule__User__P4commandAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3429,13 +3429,13 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1314:1: ( ruleP4Command )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1315:1: ruleP4Command
             {
-             before(grammarAccess.getUSERAccess().getP4commandP4CommandParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleP4Command_in_rule__USER__P4commandAssignment_22621);
+             before(grammarAccess.getUserAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+            pushFollow(FOLLOW_ruleP4Command_in_rule__User__P4commandAssignment_22621);
             ruleP4Command();
 
             state._fsp--;
 
-             after(grammarAccess.getUSERAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+             after(grammarAccess.getUserAccess().getP4commandP4CommandParserRuleCall_2_0()); 
 
             }
 
@@ -3454,12 +3454,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__USER__P4commandAssignment_2"
+    // $ANTLR end "rule__User__P4commandAssignment_2"
 
 
-    // $ANTLR start "rule__CLIENT__NameAssignment_1"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1324:1: rule__CLIENT__NameAssignment_1 : ( RULE_ID ) ;
-    public final void rule__CLIENT__NameAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__Client__NameAssignment_1"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1324:1: rule__Client__NameAssignment_1 : ( RULE_ID ) ;
+    public final void rule__Client__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3470,9 +3470,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1329:1: ( RULE_ID )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1330:1: RULE_ID
             {
-             before(grammarAccess.getCLIENTAccess().getNameIDTerminalRuleCall_1_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__CLIENT__NameAssignment_12652); 
-             after(grammarAccess.getCLIENTAccess().getNameIDTerminalRuleCall_1_0()); 
+             before(grammarAccess.getClientAccess().getNameIDTerminalRuleCall_1_0()); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Client__NameAssignment_12652); 
+             after(grammarAccess.getClientAccess().getNameIDTerminalRuleCall_1_0()); 
 
             }
 
@@ -3491,12 +3491,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__NameAssignment_1"
+    // $ANTLR end "rule__Client__NameAssignment_1"
 
 
-    // $ANTLR start "rule__CLIENT__P4commandAssignment_2"
-    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1339:1: rule__CLIENT__P4commandAssignment_2 : ( ruleP4Command ) ;
-    public final void rule__CLIENT__P4commandAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__Client__P4commandAssignment_2"
+    // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1339:1: rule__Client__P4commandAssignment_2 : ( ruleP4Command ) ;
+    public final void rule__Client__P4commandAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -3507,13 +3507,13 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1344:1: ( ruleP4Command )
             // ../org.xtext.example.p4dsl.ui/src-gen/org/xtext/example/p4dsl/ui/contentassist/antlr/internal/InternalP4Dsl.g:1345:1: ruleP4Command
             {
-             before(grammarAccess.getCLIENTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleP4Command_in_rule__CLIENT__P4commandAssignment_22683);
+             before(grammarAccess.getClientAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+            pushFollow(FOLLOW_ruleP4Command_in_rule__Client__P4commandAssignment_22683);
             ruleP4Command();
 
             state._fsp--;
 
-             after(grammarAccess.getCLIENTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+             after(grammarAccess.getClientAccess().getP4commandP4CommandParserRuleCall_2_0()); 
 
             }
 
@@ -3532,7 +3532,7 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__CLIENT__P4commandAssignment_2"
+    // $ANTLR end "rule__Client__P4commandAssignment_2"
 
 
     // $ANTLR start "rule__Add__NameAssignment_1"
@@ -3674,15 +3674,15 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rulePUCFlag_in_entryRulePUCFlag242 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRulePUCFlag249 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__PUCFlag__Alternatives_in_rulePUCFlag275 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePORT_in_entryRulePORT302 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePORT309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PORT__Group__0_in_rulePORT335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleUSER_in_entryRuleUSER362 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleUSER369 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__USER__Group__0_in_ruleUSER395 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleCLIENT_in_entryRuleCLIENT422 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleCLIENT429 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__CLIENT__Group__0_in_ruleCLIENT455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePort_in_entryRulePort302 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePort309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Port__Group__0_in_rulePort335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleUser_in_entryRuleUser362 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleUser369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__User__Group__0_in_ruleUser395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClient_in_entryRuleClient422 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClient429 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Client__Group__0_in_ruleClient455 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFileBasedCommand_in_entryRuleFileBasedCommand482 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleFileBasedCommand489 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__FileBasedCommand__Alternatives_in_ruleFileBasedCommand515 = new BitSet(new long[]{0x0000000000000002L});
@@ -3703,9 +3703,9 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__FILE__Alternatives_in_ruleFILE815 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rulePUCFlag_in_rule__P4Command__Alternatives851 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFileBasedCommand_in_rule__P4Command__Alternatives868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePORT_in_rule__PUCFlag__Alternatives900 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleUSER_in_rule__PUCFlag__Alternatives917 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleCLIENT_in_rule__PUCFlag__Alternatives934 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePort_in_rule__PUCFlag__Alternatives900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleUser_in_rule__PUCFlag__Alternatives917 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClient_in_rule__PUCFlag__Alternatives934 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleAdd_in_rule__FileBasedCommand__Alternatives966 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEdit_in_rule__FileBasedCommand__Alternatives983 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleDelete_in_rule__FileBasedCommand__Alternatives1000 = new BitSet(new long[]{0x0000000000000002L});
@@ -3716,30 +3716,30 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_11_in_rule__Command__Group__0__Impl1111 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Command__Group__1__Impl_in_rule__Command__Group__11142 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleP4Command_in_rule__Command__Group__1__Impl1169 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PORT__Group__0__Impl_in_rule__PORT__Group__01202 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__PORT__Group__1_in_rule__PORT__Group__01205 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__PORT__Group__0__Impl1233 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PORT__Group__1__Impl_in_rule__PORT__Group__11264 = new BitSet(new long[]{0x000000000003F000L});
-    public static final BitSet FOLLOW_rule__PORT__Group__2_in_rule__PORT__Group__11267 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PORT__NameAssignment_1_in_rule__PORT__Group__1__Impl1294 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PORT__Group__2__Impl_in_rule__PORT__Group__21324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__PORT__P4commandAssignment_2_in_rule__PORT__Group__2__Impl1351 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__USER__Group__0__Impl_in_rule__USER__Group__01387 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__USER__Group__1_in_rule__USER__Group__01390 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__USER__Group__0__Impl1418 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__USER__Group__1__Impl_in_rule__USER__Group__11449 = new BitSet(new long[]{0x000000000003F000L});
-    public static final BitSet FOLLOW_rule__USER__Group__2_in_rule__USER__Group__11452 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__USER__NameAssignment_1_in_rule__USER__Group__1__Impl1479 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__USER__Group__2__Impl_in_rule__USER__Group__21509 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__USER__P4commandAssignment_2_in_rule__USER__Group__2__Impl1536 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__CLIENT__Group__0__Impl_in_rule__CLIENT__Group__01572 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__CLIENT__Group__1_in_rule__CLIENT__Group__01575 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__CLIENT__Group__0__Impl1603 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__CLIENT__Group__1__Impl_in_rule__CLIENT__Group__11634 = new BitSet(new long[]{0x000000000003F000L});
-    public static final BitSet FOLLOW_rule__CLIENT__Group__2_in_rule__CLIENT__Group__11637 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__CLIENT__NameAssignment_1_in_rule__CLIENT__Group__1__Impl1664 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__CLIENT__Group__2__Impl_in_rule__CLIENT__Group__21694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__CLIENT__P4commandAssignment_2_in_rule__CLIENT__Group__2__Impl1721 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Port__Group__0__Impl_in_rule__Port__Group__01202 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Port__Group__1_in_rule__Port__Group__01205 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__Port__Group__0__Impl1233 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Port__Group__1__Impl_in_rule__Port__Group__11264 = new BitSet(new long[]{0x000000000003F000L});
+    public static final BitSet FOLLOW_rule__Port__Group__2_in_rule__Port__Group__11267 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Port__NameAssignment_1_in_rule__Port__Group__1__Impl1294 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Port__Group__2__Impl_in_rule__Port__Group__21324 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Port__P4commandAssignment_2_in_rule__Port__Group__2__Impl1351 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__User__Group__0__Impl_in_rule__User__Group__01387 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__User__Group__1_in_rule__User__Group__01390 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__User__Group__0__Impl1418 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__User__Group__1__Impl_in_rule__User__Group__11449 = new BitSet(new long[]{0x000000000003F000L});
+    public static final BitSet FOLLOW_rule__User__Group__2_in_rule__User__Group__11452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__User__NameAssignment_1_in_rule__User__Group__1__Impl1479 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__User__Group__2__Impl_in_rule__User__Group__21509 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__User__P4commandAssignment_2_in_rule__User__Group__2__Impl1536 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Client__Group__0__Impl_in_rule__Client__Group__01572 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Client__Group__1_in_rule__Client__Group__01575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__Client__Group__0__Impl1603 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Client__Group__1__Impl_in_rule__Client__Group__11634 = new BitSet(new long[]{0x000000000003F000L});
+    public static final BitSet FOLLOW_rule__Client__Group__2_in_rule__Client__Group__11637 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Client__NameAssignment_1_in_rule__Client__Group__1__Impl1664 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Client__Group__2__Impl_in_rule__Client__Group__21694 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Client__P4commandAssignment_2_in_rule__Client__Group__2__Impl1721 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Add__Group__0__Impl_in_rule__Add__Group__01757 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_rule__Add__Group__1_in_rule__Add__Group__01760 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_15_in_rule__Add__Group__0__Impl1788 = new BitSet(new long[]{0x0000000000000002L});
@@ -3772,12 +3772,12 @@ public class InternalP4DslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__FILE__Group_1__2__Impl_in_rule__FILE__Group_1__22430 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__FILE__Group_1__2__Impl2457 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleCommand_in_rule__Model__CommandAssignment2497 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleP4PORT_in_rule__PORT__NameAssignment_12528 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleP4Command_in_rule__PORT__P4commandAssignment_22559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__USER__NameAssignment_12590 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleP4Command_in_rule__USER__P4commandAssignment_22621 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__CLIENT__NameAssignment_12652 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleP4Command_in_rule__CLIENT__P4commandAssignment_22683 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleP4PORT_in_rule__Port__NameAssignment_12528 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleP4Command_in_rule__Port__P4commandAssignment_22559 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__User__NameAssignment_12590 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleP4Command_in_rule__User__P4commandAssignment_22621 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Client__NameAssignment_12652 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleP4Command_in_rule__Client__P4commandAssignment_22683 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFILE_in_rule__Add__NameAssignment_12714 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFILE_in_rule__Edit__NameAssignment_12745 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleFILE_in_rule__Delete__NameAssignment_12776 = new BitSet(new long[]{0x0000000000000002L});

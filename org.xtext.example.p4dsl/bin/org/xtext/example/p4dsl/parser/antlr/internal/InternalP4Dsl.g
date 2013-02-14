@@ -192,31 +192,31 @@ rulePUCFlag returns [EObject current=null]
     @after { leaveRule(); }:
 (
     { 
-        newCompositeNode(grammarAccess.getPUCFlagAccess().getPORTParserRuleCall_0()); 
+        newCompositeNode(grammarAccess.getPUCFlagAccess().getPortParserRuleCall_0()); 
     }
-    this_PORT_0=rulePORT
+    this_Port_0=rulePort
     { 
-        $current = $this_PORT_0.current; 
+        $current = $this_Port_0.current; 
         afterParserOrEnumRuleCall();
     }
 
     |
     { 
-        newCompositeNode(grammarAccess.getPUCFlagAccess().getUSERParserRuleCall_1()); 
+        newCompositeNode(grammarAccess.getPUCFlagAccess().getUserParserRuleCall_1()); 
     }
-    this_USER_1=ruleUSER
+    this_User_1=ruleUser
     { 
-        $current = $this_USER_1.current; 
+        $current = $this_User_1.current; 
         afterParserOrEnumRuleCall();
     }
 
     |
     { 
-        newCompositeNode(grammarAccess.getPUCFlagAccess().getCLIENTParserRuleCall_2()); 
+        newCompositeNode(grammarAccess.getPUCFlagAccess().getClientParserRuleCall_2()); 
     }
-    this_CLIENT_2=ruleCLIENT
+    this_Client_2=ruleClient
     { 
-        $current = $this_CLIENT_2.current; 
+        $current = $this_Client_2.current; 
         afterParserOrEnumRuleCall();
     }
 )
@@ -226,32 +226,32 @@ rulePUCFlag returns [EObject current=null]
 
 
 
-// Entry rule entryRulePORT
-entryRulePORT returns [EObject current=null] 
+// Entry rule entryRulePort
+entryRulePort returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getPORTRule()); }
-	 iv_rulePORT=rulePORT 
-	 { $current=$iv_rulePORT.current; } 
+	{ newCompositeNode(grammarAccess.getPortRule()); }
+	 iv_rulePort=rulePort 
+	 { $current=$iv_rulePort.current; } 
 	 EOF 
 ;
 
-// Rule PORT
-rulePORT returns [EObject current=null] 
+// Rule Port
+rulePort returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (	otherlv_0='-p' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getPORTAccess().getPKeyword_0());
+    	newLeafNode(otherlv_0, grammarAccess.getPortAccess().getPKeyword_0());
     }
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getPORTAccess().getNameP4PORTParserRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getPortAccess().getNameP4PORTParserRuleCall_1_0()); 
 	    }
 		lv_name_1_0=ruleP4PORT		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getPORTRule());
+	            $current = createModelElementForParent(grammarAccess.getPortRule());
 	        }
        		set(
        			$current, 
@@ -265,11 +265,11 @@ rulePORT returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getPORTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+	        newCompositeNode(grammarAccess.getPortAccess().getP4commandP4CommandParserRuleCall_2_0()); 
 	    }
 		lv_p4command_2_0=ruleP4Command		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getPORTRule());
+	            $current = createModelElementForParent(grammarAccess.getPortRule());
 	        }
        		add(
        			$current, 
@@ -287,33 +287,33 @@ rulePORT returns [EObject current=null]
 
 
 
-// Entry rule entryRuleUSER
-entryRuleUSER returns [EObject current=null] 
+// Entry rule entryRuleUser
+entryRuleUser returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getUSERRule()); }
-	 iv_ruleUSER=ruleUSER 
-	 { $current=$iv_ruleUSER.current; } 
+	{ newCompositeNode(grammarAccess.getUserRule()); }
+	 iv_ruleUser=ruleUser 
+	 { $current=$iv_ruleUser.current; } 
 	 EOF 
 ;
 
-// Rule USER
-ruleUSER returns [EObject current=null] 
+// Rule User
+ruleUser returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (	otherlv_0='-u' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getUSERAccess().getUKeyword_0());
+    	newLeafNode(otherlv_0, grammarAccess.getUserAccess().getUKeyword_0());
     }
 (
 (
 		lv_name_1_0=RULE_ID
 		{
-			newLeafNode(lv_name_1_0, grammarAccess.getUSERAccess().getNameIDTerminalRuleCall_1_0()); 
+			newLeafNode(lv_name_1_0, grammarAccess.getUserAccess().getNameIDTerminalRuleCall_1_0()); 
 		}
 		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getUSERRule());
+	            $current = createModelElement(grammarAccess.getUserRule());
 	        }
        		setWithLastConsumed(
        			$current, 
@@ -326,11 +326,11 @@ ruleUSER returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getUSERAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+	        newCompositeNode(grammarAccess.getUserAccess().getP4commandP4CommandParserRuleCall_2_0()); 
 	    }
 		lv_p4command_2_0=ruleP4Command		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getUSERRule());
+	            $current = createModelElementForParent(grammarAccess.getUserRule());
 	        }
        		add(
        			$current, 
@@ -348,33 +348,33 @@ ruleUSER returns [EObject current=null]
 
 
 
-// Entry rule entryRuleCLIENT
-entryRuleCLIENT returns [EObject current=null] 
+// Entry rule entryRuleClient
+entryRuleClient returns [EObject current=null] 
 	:
-	{ newCompositeNode(grammarAccess.getCLIENTRule()); }
-	 iv_ruleCLIENT=ruleCLIENT 
-	 { $current=$iv_ruleCLIENT.current; } 
+	{ newCompositeNode(grammarAccess.getClientRule()); }
+	 iv_ruleClient=ruleClient 
+	 { $current=$iv_ruleClient.current; } 
 	 EOF 
 ;
 
-// Rule CLIENT
-ruleCLIENT returns [EObject current=null] 
+// Rule Client
+ruleClient returns [EObject current=null] 
     @init { enterRule(); 
     }
     @after { leaveRule(); }:
 (	otherlv_0='-c' 
     {
-    	newLeafNode(otherlv_0, grammarAccess.getCLIENTAccess().getCKeyword_0());
+    	newLeafNode(otherlv_0, grammarAccess.getClientAccess().getCKeyword_0());
     }
 (
 (
 		lv_name_1_0=RULE_ID
 		{
-			newLeafNode(lv_name_1_0, grammarAccess.getCLIENTAccess().getNameIDTerminalRuleCall_1_0()); 
+			newLeafNode(lv_name_1_0, grammarAccess.getClientAccess().getNameIDTerminalRuleCall_1_0()); 
 		}
 		{
 	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getCLIENTRule());
+	            $current = createModelElement(grammarAccess.getClientRule());
 	        }
        		setWithLastConsumed(
        			$current, 
@@ -387,11 +387,11 @@ ruleCLIENT returns [EObject current=null]
 )(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getCLIENTAccess().getP4commandP4CommandParserRuleCall_2_0()); 
+	        newCompositeNode(grammarAccess.getClientAccess().getP4commandP4CommandParserRuleCall_2_0()); 
 	    }
 		lv_p4command_2_0=ruleP4Command		{
 	        if ($current==null) {
-	            $current = createModelElementForParent(grammarAccess.getCLIENTRule());
+	            $current = createModelElementForParent(grammarAccess.getClientRule());
 	        }
        		add(
        			$current, 

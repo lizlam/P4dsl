@@ -59,31 +59,31 @@ public interface P4DslFactory extends EFactory
   PUCFlag createPUCFlag();
 
   /**
-   * Returns a new object of class '<em>PORT</em>'.
+   * Returns a new object of class '<em>Port</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>PORT</em>'.
+   * @return a new object of class '<em>Port</em>'.
    * @generated
    */
-  PORT createPORT();
+  Port createPort();
 
   /**
-   * Returns a new object of class '<em>USER</em>'.
+   * Returns a new object of class '<em>User</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>USER</em>'.
+   * @return a new object of class '<em>User</em>'.
    * @generated
    */
-  USER createUSER();
+  User createUser();
 
   /**
-   * Returns a new object of class '<em>CLIENT</em>'.
+   * Returns a new object of class '<em>Client</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>CLIENT</em>'.
+   * @return a new object of class '<em>Client</em>'.
    * @generated
    */
-  CLIENT createCLIENT();
+  Client createClient();
 
   /**
    * Returns a new object of class '<em>File Based Command</em>'.

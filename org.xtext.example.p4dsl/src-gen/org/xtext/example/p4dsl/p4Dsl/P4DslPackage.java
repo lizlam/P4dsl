@@ -169,11 +169,11 @@ public interface P4DslPackage extends EPackage
   int PUC_FLAG_FEATURE_COUNT = P4_COMMAND_FEATURE_COUNT + 1;
 
   /**
-   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl <em>PORT</em>}' class.
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PortImpl <em>Port</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl
-   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPORT()
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.PortImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPort()
    * @generated
    */
   int PORT = 4;
@@ -197,7 +197,7 @@ public interface P4DslPackage extends EPackage
   int PORT__P4COMMAND = PUC_FLAG__P4COMMAND;
 
   /**
-   * The number of structural features of the '<em>PORT</em>' class.
+   * The number of structural features of the '<em>Port</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -206,11 +206,11 @@ public interface P4DslPackage extends EPackage
   int PORT_FEATURE_COUNT = PUC_FLAG_FEATURE_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.USERImpl <em>USER</em>}' class.
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.UserImpl <em>User</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.xtext.example.p4dsl.p4Dsl.impl.USERImpl
-   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getUSER()
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.UserImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getUser()
    * @generated
    */
   int USER = 5;
@@ -234,7 +234,7 @@ public interface P4DslPackage extends EPackage
   int USER__P4COMMAND = PUC_FLAG__P4COMMAND;
 
   /**
-   * The number of structural features of the '<em>USER</em>' class.
+   * The number of structural features of the '<em>User</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -243,11 +243,11 @@ public interface P4DslPackage extends EPackage
   int USER_FEATURE_COUNT = PUC_FLAG_FEATURE_COUNT + 0;
 
   /**
-   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl <em>CLIENT</em>}' class.
+   * The meta object id for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.ClientImpl <em>Client</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl
-   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getCLIENT()
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.ClientImpl
+   * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getClient()
    * @generated
    */
   int CLIENT = 6;
@@ -271,7 +271,7 @@ public interface P4DslPackage extends EPackage
   int CLIENT__P4COMMAND = PUC_FLAG__P4COMMAND;
 
   /**
-   * The number of structural features of the '<em>CLIENT</em>' class.
+   * The number of structural features of the '<em>Client</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -466,34 +466,34 @@ public interface P4DslPackage extends EPackage
   EReference getPUCFlag_P4command();
 
   /**
-   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.PORT <em>PORT</em>}'.
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.Port <em>Port</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>PORT</em>'.
-   * @see org.xtext.example.p4dsl.p4Dsl.PORT
+   * @return the meta object for class '<em>Port</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.Port
    * @generated
    */
-  EClass getPORT();
+  EClass getPort();
 
   /**
-   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.USER <em>USER</em>}'.
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.User <em>User</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>USER</em>'.
-   * @see org.xtext.example.p4dsl.p4Dsl.USER
+   * @return the meta object for class '<em>User</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.User
    * @generated
    */
-  EClass getUSER();
+  EClass getUser();
 
   /**
-   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.CLIENT <em>CLIENT</em>}'.
+   * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.Client <em>Client</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>CLIENT</em>'.
-   * @see org.xtext.example.p4dsl.p4Dsl.CLIENT
+   * @return the meta object for class '<em>Client</em>'.
+   * @see org.xtext.example.p4dsl.p4Dsl.Client
    * @generated
    */
-  EClass getCLIENT();
+  EClass getClient();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.p4dsl.p4Dsl.FileBasedCommand <em>File Based Command</em>}'.
@@ -623,34 +623,34 @@ public interface P4DslPackage extends EPackage
     EReference PUC_FLAG__P4COMMAND = eINSTANCE.getPUCFlag_P4command();
 
     /**
-     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl <em>PORT</em>}' class.
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.PortImpl <em>Port</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.xtext.example.p4dsl.p4Dsl.impl.PORTImpl
-     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPORT()
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.PortImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getPort()
      * @generated
      */
-    EClass PORT = eINSTANCE.getPORT();
+    EClass PORT = eINSTANCE.getPort();
 
     /**
-     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.USERImpl <em>USER</em>}' class.
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.UserImpl <em>User</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.xtext.example.p4dsl.p4Dsl.impl.USERImpl
-     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getUSER()
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.UserImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getUser()
      * @generated
      */
-    EClass USER = eINSTANCE.getUSER();
+    EClass USER = eINSTANCE.getUser();
 
     /**
-     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl <em>CLIENT</em>}' class.
+     * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.ClientImpl <em>Client</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.xtext.example.p4dsl.p4Dsl.impl.CLIENTImpl
-     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getCLIENT()
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.ClientImpl
+     * @see org.xtext.example.p4dsl.p4Dsl.impl.P4DslPackageImpl#getClient()
      * @generated
      */
-    EClass CLIENT = eINSTANCE.getCLIENT();
+    EClass CLIENT = eINSTANCE.getClient();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.p4dsl.p4Dsl.impl.FileBasedCommandImpl <em>File Based Command</em>}' class.

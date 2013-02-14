@@ -105,8 +105,8 @@ public class P4DslSwitch<T> extends Switch<T>
       }
       case P4DslPackage.PORT:
       {
-        PORT port = (PORT)theEObject;
-        T result = casePORT(port);
+        Port port = (Port)theEObject;
+        T result = casePort(port);
         if (result == null) result = casePUCFlag(port);
         if (result == null) result = caseP4Command(port);
         if (result == null) result = caseCommand(port);
@@ -115,8 +115,8 @@ public class P4DslSwitch<T> extends Switch<T>
       }
       case P4DslPackage.USER:
       {
-        USER user = (USER)theEObject;
-        T result = caseUSER(user);
+        User user = (User)theEObject;
+        T result = caseUser(user);
         if (result == null) result = casePUCFlag(user);
         if (result == null) result = caseP4Command(user);
         if (result == null) result = caseCommand(user);
@@ -125,8 +125,8 @@ public class P4DslSwitch<T> extends Switch<T>
       }
       case P4DslPackage.CLIENT:
       {
-        CLIENT client = (CLIENT)theEObject;
-        T result = caseCLIENT(client);
+        Client client = (Client)theEObject;
+        T result = caseClient(client);
         if (result == null) result = casePUCFlag(client);
         if (result == null) result = caseP4Command(client);
         if (result == null) result = caseCommand(client);
@@ -241,49 +241,49 @@ public class P4DslSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>PORT</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Port</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>PORT</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Port</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T casePORT(PORT object)
+  public T casePort(Port object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>USER</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>User</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>USER</em>'.
+   * @return the result of interpreting the object as an instance of '<em>User</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseUSER(USER object)
+  public T caseUser(User object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>CLIENT</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Client</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>CLIENT</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Client</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseCLIENT(CLIENT object)
+  public T caseClient(Client object)
   {
     return null;
   }

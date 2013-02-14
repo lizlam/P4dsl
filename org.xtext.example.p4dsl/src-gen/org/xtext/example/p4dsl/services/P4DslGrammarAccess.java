@@ -78,29 +78,29 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	public class PUCFlagElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PUCFlag");
 		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cPORTParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cUSERParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cCLIENTParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
+		private final RuleCall cPortParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cUserParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cClientParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		
 		//PUCFlag:
-		//	PORT | USER | CLIENT;
+		//	Port | User | Client;
 		public ParserRule getRule() { return rule; }
 
-		//PORT | USER | CLIENT
+		//Port | User | Client
 		public Alternatives getAlternatives() { return cAlternatives; }
 
-		//PORT
-		public RuleCall getPORTParserRuleCall_0() { return cPORTParserRuleCall_0; }
+		//Port
+		public RuleCall getPortParserRuleCall_0() { return cPortParserRuleCall_0; }
 
-		//USER
-		public RuleCall getUSERParserRuleCall_1() { return cUSERParserRuleCall_1; }
+		//User
+		public RuleCall getUserParserRuleCall_1() { return cUserParserRuleCall_1; }
 
-		//CLIENT
-		public RuleCall getCLIENTParserRuleCall_2() { return cCLIENTParserRuleCall_2; }
+		//Client
+		public RuleCall getClientParserRuleCall_2() { return cClientParserRuleCall_2; }
 	}
 
-	public class PORTElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "PORT");
+	public class PortElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Port");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cPKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -108,7 +108,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cP4commandAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cP4commandP4CommandParserRuleCall_2_0 = (RuleCall)cP4commandAssignment_2.eContents().get(0);
 		
-		//PORT:
+		//Port:
 		//	"-p" name=P4PORT p4command+=P4Command;
 		public ParserRule getRule() { return rule; }
 
@@ -131,8 +131,8 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		public RuleCall getP4commandP4CommandParserRuleCall_2_0() { return cP4commandP4CommandParserRuleCall_2_0; }
 	}
 
-	public class USERElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "USER");
+	public class UserElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "User");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cUKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -140,7 +140,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cP4commandAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cP4commandP4CommandParserRuleCall_2_0 = (RuleCall)cP4commandAssignment_2.eContents().get(0);
 		
-		//USER:
+		//User:
 		//	"-u" name=ID p4command+=P4Command;
 		public ParserRule getRule() { return rule; }
 
@@ -163,8 +163,8 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		public RuleCall getP4commandP4CommandParserRuleCall_2_0() { return cP4commandP4CommandParserRuleCall_2_0; }
 	}
 
-	public class CLIENTElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CLIENT");
+	public class ClientElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Client");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cCKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -172,7 +172,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cP4commandAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cP4commandP4CommandParserRuleCall_2_0 = (RuleCall)cP4commandAssignment_2.eContents().get(0);
 		
-		//CLIENT:
+		//Client:
 		//	"-c" name=ID p4command+=P4Command;
 		public ParserRule getRule() { return rule; }
 
@@ -352,9 +352,9 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	private CommandElements pCommand;
 	private P4CommandElements pP4Command;
 	private PUCFlagElements pPUCFlag;
-	private PORTElements pPORT;
-	private USERElements pUSER;
-	private CLIENTElements pCLIENT;
+	private PortElements pPort;
+	private UserElements pUser;
+	private ClientElements pClient;
 	private FileBasedCommandElements pFileBasedCommand;
 	private AddElements pAdd;
 	private EditElements pEdit;
@@ -431,7 +431,7 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//PUCFlag:
-	//	PORT | USER | CLIENT;
+	//	Port | User | Client;
 	public PUCFlagElements getPUCFlagAccess() {
 		return (pPUCFlag != null) ? pPUCFlag : (pPUCFlag = new PUCFlagElements());
 	}
@@ -440,34 +440,34 @@ public class P4DslGrammarAccess extends AbstractGrammarElementFinder {
 		return getPUCFlagAccess().getRule();
 	}
 
-	//PORT:
+	//Port:
 	//	"-p" name=P4PORT p4command+=P4Command;
-	public PORTElements getPORTAccess() {
-		return (pPORT != null) ? pPORT : (pPORT = new PORTElements());
+	public PortElements getPortAccess() {
+		return (pPort != null) ? pPort : (pPort = new PortElements());
 	}
 	
-	public ParserRule getPORTRule() {
-		return getPORTAccess().getRule();
+	public ParserRule getPortRule() {
+		return getPortAccess().getRule();
 	}
 
-	//USER:
+	//User:
 	//	"-u" name=ID p4command+=P4Command;
-	public USERElements getUSERAccess() {
-		return (pUSER != null) ? pUSER : (pUSER = new USERElements());
+	public UserElements getUserAccess() {
+		return (pUser != null) ? pUser : (pUser = new UserElements());
 	}
 	
-	public ParserRule getUSERRule() {
-		return getUSERAccess().getRule();
+	public ParserRule getUserRule() {
+		return getUserAccess().getRule();
 	}
 
-	//CLIENT:
+	//Client:
 	//	"-c" name=ID p4command+=P4Command;
-	public CLIENTElements getCLIENTAccess() {
-		return (pCLIENT != null) ? pCLIENT : (pCLIENT = new CLIENTElements());
+	public ClientElements getClientAccess() {
+		return (pClient != null) ? pClient : (pClient = new ClientElements());
 	}
 	
-	public ParserRule getCLIENTRule() {
-		return getCLIENTAccess().getRule();
+	public ParserRule getClientRule() {
+		return getClientAccess().getRule();
 	}
 
 	//FileBasedCommand:
