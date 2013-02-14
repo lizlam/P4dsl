@@ -48,7 +48,7 @@ public class P4DslProposalProvider extends AbstractP4DslProposalProvider {
  
     public void complete_Port(EObject model, RuleCall ruleCall,
     	 	 ContentAssistContext context, ICompletionProposalAcceptor acceptor) {
-    	 acceptor.accept(createCompletionProposal("-p", "-p", imageHelper.getImage("database.png"), context));
+    	 acceptor.accept(createCompletionProposal("-p server:port", "-p", imageHelper.getImage("database.png"), context));
 }
     
  
